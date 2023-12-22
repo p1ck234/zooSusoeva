@@ -1,0 +1,96 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  font-weight: 800;
+  font-size: 16px;
+  border-radius: 3px;
+}
+
+.button__dark {
+  align-self: flex-start;
+  background: $yellow;
+  color: $white;
+
+  &:hover {
+    background: $orange;
+  }
+}
+
+.button__dark-hero {
+  border-radius: 0;
+  padding: 21px 63px;
+}
+
+.button__dark-introduse {
+  margin-top: 50px;
+}
+
+.button__dark-help {
+  padding: 21px 62px;
+  margin-top: 60px;
+}
+
+.button__dark-offer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 26%;
+  padding: 20px 30px;
+  margin-top: 88px;
+}
+
+.button__light {
+  background: transparent;
+  color: $black;
+  border: 3px solid $yellow;
+  font-weight: 700;
+  line-height: 21.79px;
+
+  // &::after {
+  //   content: "";
+  //   display: inline-block;
+  //   background: url(../../img/icons/arrow-black.svg) no-repeat;
+  //   width: 15px;
+  //   height: 15px;
+  //   margin-left: 10px;
+  // }
+
+  &:hover {
+    border-color: $orange;
+  }
+}
+
+.button__light-reviews {
+  flex-shrink: 0;
+  // width: 191px;
+  // height: 80px;
+  padding: 19px 37px;
+  // margin-right: 20px;
+}
+
+.button__light-faq {
+  align-self: center;
+  padding: 17px 55px;
+  margin: 0 auto;
+}
+
+.button__light-prev {
+  padding: 15px 48px;
+}
+
+.button__text {
+  margin-right: 16px;
+  flex-wrap: wrap;
+}
+
+.button__icon {
+  flex-shrink: 0;
+  stroke: $white;
+  width: 15px;
+  height: 15px;
+
+  &--dark {
+    stroke: $black;
+  }
+}

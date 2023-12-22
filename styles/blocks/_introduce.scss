@@ -1,0 +1,74 @@
+.introduce {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.introduce__photo {
+  // width: 100%;
+  // height: 100%;
+  object-fit: cover;
+  max-width: 41%;
+  margin-right: 10%;
+}
+
+.introduce__photo-decor {
+  margin-right: 0;
+}
+
+.introduce__desc {
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+}
+
+.introduce__desc-decor {
+  position: relative;
+
+  &::after {
+    content: url('../../img/dont-hurt.png');
+    position: absolute;
+    bottom: -166px;
+    left: 880px;
+  }
+}
+
+.introduce__text {
+  font-size: 18px;
+  line-height: 23.4px;
+  padding-right: 20px;
+}
+
+.introduce__text p {
+  margin-bottom: 26px;
+
+
+  &:nth-child(2) {
+    margin-bottom: 8px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.introduce__text a {
+  text-decoration: 1px underline;
+
+  &:hover {
+    color: $black;
+  }
+}
+
+.introduce__subtitle {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 31.2px;
+  color: $black;
+  margin-bottom: 32px;
+}
+
+.introduce__subtitle-help {
+  padding-right: 25px;
+}

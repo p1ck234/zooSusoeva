@@ -1,0 +1,13 @@
+.header {
+  display: flex;
+  padding-top: 15px;
+  margin-bottom: 60px;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid $orange;
+  padding-bottom: 12px;
+}

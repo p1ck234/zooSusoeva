@@ -1,0 +1,201 @@
+.basket {
+  display: flex;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+
+    &_head {
+      width: 908px;
+      height: 70px;
+      display: flex;
+      border-radius: 4px;
+      border: 2px solid $orange;
+      padding-top: 17px;
+      padding-left: 30px;
+      padding-right: 15px;
+    }
+
+    &_check {
+      position: relative;
+      display: flex;
+    }
+    &_check input[type='checkbox'] {
+      position: absolute;
+      opacity: 0;
+      width: 26px;
+      height: 26px;
+    }
+
+    &_check &_checkbox {
+      display: inline-block;
+      width: 26px;
+      height: 26px;
+      background-image: url(/img/icons/chekbox.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      cursor: pointer;
+    }
+
+    &_check input[type='checkbox']:checked + .basket__list_checkbox {
+      background-image: url(/img/icons/checkmark.svg);
+    }
+
+    &__text {
+      color: #000203;
+      font-family: 'Open Sans', Helvetica, sans-serif;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      padding-left: 15px;
+    }
+
+    &_img {
+      margin-left: 30px;
+      margin-right: 60px;
+      position: relative;
+    }
+
+    &_img img {
+      display: block;
+    }
+  }
+
+  &__item {
+    display: flex;
+    width: 907px;
+    padding: 30px;
+    flex-direction: row;
+    align-items: center;
+    // gap: 10px;
+    border-radius: 4px;
+    border: 2px solid #ffb700;
+    background: #fff;
+
+    &_title {
+      color: #000203;
+      font-family: Open Sans;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 130%; /* 23.4px */
+    }
+
+    &_desctiption {
+      color: #ffb700;
+      font-family: Open Sans;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 130%; /* 20.8px */
+      margin-top: 10px;
+    }
+
+    &_price {
+      color: #000203;
+      font-family: Open Sans;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      margin-top: 30px;
+      margin-right: 526px;
+    }
+
+    &_block {
+      display: flex;
+      width: 639px;
+      height: 123px;
+      flex-direction: column;
+      align-items: flex-start;
+      flex-shrink: 0;
+    }
+
+    &_div {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end;
+    }
+
+    &_svg {
+      width: 28px;
+      height: 34px;
+      object-fit: cover;
+      fill: #ffffff;
+      stroke: #000203;
+    }
+  }
+
+  &__price {
+    width: 289px;
+    height: 204px;
+    border-radius: 4px;
+    border: 2px solid #ffb700;
+    margin-left: 20px;
+    padding: 30px 20px 30px 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    &_end {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 249px;
+    }
+
+    &_text {
+      width: 108px;
+      color: #000203;
+      font-family: Open Sans;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+
+    &_money {
+      width: 111px;
+      color: #ffb700;
+      text-align: right;
+      font-family: Open Sans;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+
+    &_line {
+      width: 249px;
+      height: 2px;
+      background: #ffb700;
+      margin-top: 20px;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__button {
+    width: 218px;
+    height: 60px;
+    border-radius: 4px;
+    background: $yellow;
+    left: 37px;
+    top: 19px;
+    color: #fff;
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    color: #ffffff;
+
+    &:hover {
+      background: $orange;
+    }
+  }
+}

@@ -1,0 +1,114 @@
+.product {
+  display: flex;
+  flex-direction: column;
+  min-height: 576px;
+}
+
+.product__img {
+  margin-bottom: 30px;
+  overflow: hidden;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.product__img-discount {
+
+  ::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background: url('../../img/icons/discount.svg') no-repeat;
+    width: 60px;
+    height: 60px;
+    top: 10px;
+    left: 10px;
+  }
+}
+
+.product__pic {
+  object-fit: cover;
+}
+
+.product__title {
+  font-weight: 600;
+  line-height: 23.4px;
+  color: #000;
+  margin-bottom: 9px;
+
+  &:hover {
+    color: $orange;
+  }
+}
+
+.product__desc {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18.2px;
+  color: $orange;
+  margin-bottom: 70px;
+}
+
+.product__purchase {
+  display: flex;
+  align-items: center;
+}
+
+.product__price-discount {
+  position: relative;
+}
+
+.product__price-discount:before {
+    content: "1600 ₽";
+    display: block;
+    position: absolute;
+    font-size: 16px;
+    font-weight: 700;
+    color: $grey;
+    bottom: 51px;
+    left: 0;
+    width: 51px;
+    height: 21px;
+}
+
+.product__price-discount:after {
+  content: "";
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  border-bottom: 2px solid #FFB700;
+  position: absolute;
+  bottom: 181%;
+  left: 3%;
+  width: 59%;
+}
+
+.product__price-discount-wk:before {
+  content: "4350 ₽";
+}
+
+.product__price-discount-wk:after {
+  content: "";
+  bottom: 181%;
+  left: 1%;
+  width: 48%;
+}
+
+.product__price {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 31.2px;
+  color: $black;
+  margin-right: 70px;
+}
+
+.product__button-light {
+  background: transparent;
+  color: #000203;
+  border: 2px solid #FFC533;
+  border-radius: 3px;
+  padding: 9px 28px;
+  font-size: 16px;
+  font-weight: 700;
+
+  &:hover {
+    border-color: $orange;
+  }
+}

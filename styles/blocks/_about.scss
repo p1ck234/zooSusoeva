@@ -1,0 +1,35 @@
+.about {
+  padding-top: 20px;
+  margin-bottom: 120px;
+}
+
+.about__content {
+  position: relative;
+
+    &::before {
+      content: url('');
+      background: no-repeat;
+      background-image: url(../../img/pretenzii.png);
+      width: calc(var(--index)*20);
+      height: calc(var(--index)*10);
+      background-size: 100%;
+      position: absolute;
+      top: 68%;
+      left: -21%;
+      z-index: 2;
+    }
+  }
+
+  @media (max-width: 1560px) {
+   
+    .about__content::before {
+      top: 69%;
+      left: -8%;
+    }
+  }
+
+  @media (max-width: 1140px) {
+    .about__content::before {
+      top: 64%;
+    }
+  }

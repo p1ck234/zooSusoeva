@@ -1,0 +1,52 @@
+$containerWidth: 1220px;
+$baseFontSize: 18px;
+
+//breakpoints
+// $large-tablets: 1024px;
+// $tablets: 768px;
+// $phones: 480px;
+// $small-phones: 320px;
+
+//colors
+$black: #000203;
+$yellow: #FFC533;
+$orange: #FFB700;
+$white: #FFFFFF;
+$grey: #545454;
+$darkGrey: #282828;
+$lightGrey: #9A9A9A;
+
+// setups
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+@import "./_layout.scss";
+@import "./_media.scss";
+
+//blocks
+@import "./blocks/_header.scss";
+@import "./blocks/_logo.scss";
+@import "./blocks/_menu.scss";
+@import "./blocks/_cart.scss";
+@import "./blocks/_breadcrumbs.scss";
+@import "./blocks/_button.scss";
+@import "./blocks/_hero.scss";
+@import "./blocks/_reviews.scss";
+@import "./blocks/_review.scss";
+@import "./blocks/_title.scss";
+@import "./blocks/_about.scss";
+@import "./blocks/_introduce.scss";
+@import "./blocks/_benefit.scss";
+@import "./blocks/_features.scss";
+@import "./blocks/_feature.scss";
+@import "./blocks/_help.scss";
+@import "./blocks/_offers.scss";
+@import "./blocks/_offer.scss";
+@import "./blocks/_faq.scss";
+@import "./blocks/_store.scss";
+@import "./blocks/_products.scss";
+@import "./blocks/_product.scss";
+@import "./blocks/_books.scss";
+@import "./blocks/_card.scss";
+@import "./blocks/_footer.scss";
+@import "./blocks/_social.scss";
+@import "./blocks/_basket.scss";
+@import "./blocks/_faqs.scss";

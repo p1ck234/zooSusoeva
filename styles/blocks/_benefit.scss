@@ -1,0 +1,51 @@
+.benefit {
+  padding-top: 20px;
+  margin-bottom: 116px;
+  position: relative;
+
+  &::after {
+    content: url('');
+    background: left bottom no-repeat;
+    background-image: url('../../img/gsd.png');
+    width: calc(var(--index)*12.5);
+    height: calc(var(--index)*21);
+    background-size: 100%;
+    position: absolute;
+    bottom: -160px;
+    right: 0;
+    z-index: 2;
+  }
+}
+
+@media (max-width: 1750px) {
+
+  .benefit::after {
+    width: calc(var(--index)*10);
+    height: calc(var(--index)*21);
+  }
+}
+
+@media (max-width: 1610px) {
+
+  .benefit::after {
+    width: calc(var(--index)*8);
+    height: calc(var(--index)*21);
+    bottom: -95px;
+  }
+}
+
+@media (max-width: 1505px) {
+
+  .benefit::after {
+    width: calc(var(--index)*6);
+    height: calc(var(--index)*21);
+    bottom: -73px;
+  }
+}
+
+@media (max-width: 1469px) {
+
+  .benefit::after {
+    display: none;
+  }
+}

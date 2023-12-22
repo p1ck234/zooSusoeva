@@ -1,0 +1,122 @@
+.help {
+  padding-top: 20px;
+  margin-bottom: 117px;
+  position: relative;
+
+  &::before {
+    content: url('');
+    background: left bottom no-repeat;
+    background-image: url('../../img/hello-doggy.png');
+    width: calc(var(--index)*7.8);
+    height: calc(var(--index)*11);
+    background-size: 100%;
+    position: absolute;
+    bottom: -4%;
+    left: 0;
+    z-index: 2;
+  }
+}
+
+@media (max-width: 1078px) {
+
+  .help::before {
+    bottom: -7%;
+  }
+}
+
+.help__content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0 auto;
+  margin-bottom: 61px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.help__photo {
+  max-width: 41%;
+  object-fit: cover;
+  margin-right: 10%;
+}
+
+.help__photo-decor {
+  max-width: 41%;
+  object-fit: cover;
+  margin-right: 0;
+  margin-left: 10%;
+}
+
+.help__desc {
+  display: flex;
+  flex-direction: column;
+  padding-top: 27px;
+}
+
+.help__desc-decor {
+  position: relative;
+
+  &::after {
+    content: url('');
+    background: no-repeat;
+    background-image: url('../../img/dont-hurt.png');
+    width: calc(var(--index)*20);
+    height: calc(var(--index)*10);
+    background-size: 100%;
+    position: absolute;
+    top: 1%;
+    left: 166%;
+    z-index: 2;
+  }
+}
+
+@media (max-width: 1740px) {
+
+  .help__desc-decor::after {
+    width: calc(var(--index)*21);
+    left: 142%;
+    top: 2%;
+  }
+}
+
+@media (max-width: 1350px) {
+
+  .help__desc-decor::after {
+    left: 135%;
+  }
+}
+
+.help__text {
+  font-size: 18px;
+  line-height: 23.4px;
+  // padding-right: 16px;
+}
+
+.help__text p {
+  margin-bottom: 26px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.help__text-block-2 p { // для PerfectPixel
+  &:nth-child(3) {
+    margin-bottom: 10px;
+  }
+}
+
+.help__subtitle {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 31.2px;
+  color: $black;
+  margin-bottom: 32px;
+  padding-right: 10%;
+}
+
+.help__subtitle-block-2 {
+  padding-right: 29%; // для PerfectPixel
+}

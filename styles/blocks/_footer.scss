@@ -1,0 +1,123 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  min-height: 270px;
+  margin-top: 270px;
+  background: $black;
+  color: $white;
+
+  &::after {
+    content: url('');
+    background: right bottom no-repeat;
+    background-image: url('../../img/footer-dog-main.png');
+    width: 227px;
+    height: 327px;
+    background-size: 100%;
+    position: absolute;
+    bottom: 155px;
+    right: 114px;
+    z-index: 2;
+  }
+}
+
+.footer__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+
+  &::after {
+    content: "";
+    border-bottom: 1px solid $orange;
+    position: absolute;
+    bottom: 21%;
+    width: 100%;
+  }
+}
+
+.footer__contacts {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
+
+.footer__logo {
+  margin-right: 11px;
+}
+
+.footer__menu-list {
+  display: flex;
+}
+
+.footer__menu-item {
+  margin-right: 26px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.footer__menu-link {
+  
+  &:hover {
+    color: $orange;
+  }
+}
+
+.footer__connect {
+  display: flex;
+  align-items: center;
+}
+
+.footer__text {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 30.6px;
+  margin-right: 18px;
+}
+
+.footer__politics {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.footer__politic {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 19.6px;
+  margin-right: 15px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.footer__politic-link {
+  &:hover {
+    color: $orange;
+  }
+}
+
+.footer__copyright {
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 16.8px;
+  padding-top: 27px;
+}
+
+
+@media (max-width: 1750px) {
+
+  .footer::after {
+    background-size: 74%;
+    bottom: 184px;
+    right: 70px;
+  }
+}

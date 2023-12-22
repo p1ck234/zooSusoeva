@@ -1,0 +1,46 @@
+.breadcrumbs {
+  margin-bottom: 30px;
+}
+
+.breadcrumbs__card{
+  margin-bottom: 59px;
+}
+
+.breadcrumbs__list {
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumbs__item {
+  display: flex;
+  align-items: center;
+  color: $grey;
+  font-size: 12px;
+  margin-right: 18px;
+
+  &:last-child {
+    margin-right: 0;
+    
+    &::after {
+      display: none;
+    }
+  }
+
+  &::after {
+    content: "";
+    display: inline-block;
+    background: url('../../img/icons/arrow-grey.svg') no-repeat;
+    width: 8px;
+    height: 8px;
+    margin-left: 21px;
+  }
+}
+
+.breadcrumbs__item-card {
+  margin-right: 6px;
+
+  &::after {
+    content: "";
+    margin-left: 11px;
+  }
+}

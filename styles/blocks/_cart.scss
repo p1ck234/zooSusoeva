@@ -1,0 +1,18 @@
+.cart__cover {
+  overflow: hidden;
+  flex-shrink: 0;
+  margin-left: 12px;
+}
+
+.cart__img{
+  object-fit: cover;
+  width: 42px;
+  height: 47px;
+  fill: $white;
+  stroke: $black;
+
+  &:hover {
+    stroke: $orange;
+    transition: 0.3s all;
+  }
+}
