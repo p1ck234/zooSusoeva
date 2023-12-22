@@ -1140,11 +1140,21 @@ svg {
   content: "";
   display: block;
   position: absolute;
-  background: url("../img/discont.png") no-repeat;
+  background: url("../../img/icons/discount.svg") no-repeat;
   width: 60px;
   height: 60px;
   top: 10px;
   left: 10px;
+}
+
+.card__price-discont {
+  color: #545454;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 130%; /* 20.8px */
+  width: 200px;
+  text-decoration: line-through;
 }
 
 .product__pic {
@@ -1173,15 +1183,6 @@ svg {
 .product__purchase {
   display: flex;
   align-items: center;
-}
-
-.card__price-discont {
-  color: #545454;
-  font-family: Open Sans;
-  font-size: 16px;
-  font-weight: 700;
-  width: 200px;
-  text-decoration: line-through;
 }
 
 .product__price-discount {
@@ -1254,7 +1255,7 @@ svg {
 }
 
 .card__cover {
-  width: 100%;
+  width: 58%;
   margin-right: 10%;
 }
 
