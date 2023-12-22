@@ -1175,6 +1175,15 @@ svg {
   align-items: center;
 }
 
+.card__price-discont {
+  color: #545454;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 700;
+  width: 200px;
+  text-decoration: line-through;
+}
+
 .product__price-discount {
   position: relative;
 }
