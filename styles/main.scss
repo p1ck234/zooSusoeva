@@ -1,5 +1,9 @@
 $containerWidth: 1220px;
+$containerWidthTablet: 1000px;
+$containerWidthMobileBig: 440px;
+$containerWidthMobile: 320px;
 $baseFontSize: 18px;
+$baseFontSizeMobile: 16px;
 
 //breakpoints
 // $large-tablets: 1024px;
@@ -26,6 +30,7 @@ $lightGrey: #9A9A9A;
 @import "./blocks/_logo.scss";
 @import "./blocks/_menu.scss";
 @import "./blocks/_cart.scss";
+@import "./blocks/_burger.scss";
 @import "./blocks/_breadcrumbs.scss";
 @import "./blocks/_button.scss";
 @import "./blocks/_hero.scss";

@@ -7,6 +7,15 @@
     <!-- <rect x="19.2428" y="2.26368" width="21.2" height="22.7143" rx="10.6" stroke="#000203" stroke-width="3.02857"/>
     <path d="M31.8232 7.76521V18.7782H29.4948V9.97534H29.4302L26.9082 11.5563V9.49137L29.6346 7.76521H31.8232Z" stroke="#000203" fill="#000203"/> -->
   </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 84 84" id="close">
+    <path d="M53.8867 29.5508L29.5505 53.887" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M29.5508 29.5508L53.887 53.887" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 40" id="burger">
+    <path d="M38.5 10H5.5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M27.5 20H5.5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M31.1667 30H5.5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
 
   <symbol viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg" id="arrow">
     <path d="M1.5 13L7.5 7L1.5 1"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
