@@ -9,7 +9,7 @@ body {
   width: 100%;
   margin: 0;
   overflow-x: hidden;
-  background: #FFFFFF;
+  background: #ffffff;
   color: #545454;
   font-family: "Open Sans", Helvetica, sans-serif;
   font-size: 18px;
@@ -111,7 +111,7 @@ input[type=checkbox]:checked {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #FFB700;
+  border-bottom: 1px solid #ffb700;
   padding-bottom: 12px;
 }
 
@@ -143,7 +143,7 @@ input[type=checkbox]:checked {
 }
 
 .menu__link:hover, .menu__link-nav:hover {
-  color: #FFB700;
+  color: #ffb700;
 }
 
 .cart__cover {
@@ -157,11 +157,11 @@ input[type=checkbox]:checked {
      object-fit: cover;
   width: 42px;
   height: 47px;
-  fill: #FFFFFF;
+  fill: #ffffff;
   stroke: #000203;
 }
 .cart__img:hover {
-  stroke: #FFB700;
+  stroke: #ffb700;
   transition: 0.3s all;
 }
 
@@ -218,11 +218,11 @@ input[type=checkbox]:checked {
 
 .button__dark {
   align-self: flex-start;
-  background: #FFC533;
-  color: #FFFFFF;
+  background: #ffc533;
+  color: #ffffff;
 }
 .button__dark:hover {
-  background: #FFB700;
+  background: #ffb700;
 }
 
 .button__dark-hero {
@@ -252,12 +252,12 @@ input[type=checkbox]:checked {
 .button__light {
   background: transparent;
   color: #000203;
-  border: 3px solid #FFC533;
+  border: 3px solid #ffc533;
   font-weight: 700;
   line-height: 21.79px;
 }
 .button__light:hover {
-  border-color: #FFB700;
+  border-color: #ffb700;
 }
 
 .button__light-reviews {
@@ -282,7 +282,7 @@ input[type=checkbox]:checked {
 
 .button__icon {
   flex-shrink: 0;
-  stroke: #FFFFFF;
+  stroke: #ffffff;
   width: 15px;
   height: 15px;
 }
@@ -545,7 +545,7 @@ input[type=checkbox]:checked {
   align-items: center;
   justify-content: flex-start;
   padding-bottom: 20px;
-  background: linear-gradient(to right, #FFB700 50%, transparent 50%), linear-gradient(to right, #FFB700 50%, transparent 50%);
+  background: linear-gradient(to right, #ffb700 50%, transparent 50%), linear-gradient(to right, #ffb700 50%, transparent 50%);
   background-repeat: repeat-x;
   background-size: 18px 2px;
   background-position: left bottom;
@@ -579,16 +579,16 @@ input[type=checkbox]:checked {
 .reviews__item {
   width: 32.7%;
   min-height: 230px;
-  border-left: 3px solid #FFB700;
-  border-top: 3px solid #FFB700;
-  border-bottom: 3px solid #FFB700;
+  border-left: 3px solid #ffb700;
+  border-top: 3px solid #ffb700;
+  border-bottom: 3px solid #ffb700;
 }
 .reviews__item:first-child {
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
 }
 .reviews__item:last-child {
-  border-right: 3px solid #FFB700;
+  border-right: 3px solid #ffb700;
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
 }
@@ -940,7 +940,7 @@ input[type=checkbox]:checked {
 }
 
 .offer__title-link:hover {
-  color: #FFB700;
+  color: #ffb700;
 }
 
 .faqs {
@@ -1019,11 +1019,11 @@ input[type=checkbox]:checked {
 }
 
 .faq.active {
-  border-color: #FFB700;
+  border-color: #ffb700;
 }
 
 .faq.active + .faq {
-  border-top-color: #FFB700;
+  border-top-color: #ffb700;
 }
 
 .faq.active .faq__answer {
@@ -1034,7 +1034,7 @@ input[type=checkbox]:checked {
 
 .faq.active svg {
   transform: rotate(180deg);
-  stroke: #FFB700;
+  stroke: #ffb700;
 }
 
 svg {
@@ -1089,7 +1089,7 @@ svg {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 2px solid #FFC533;
+  border: 2px solid #ffc533;
   background: transparent;
   color: #000203;
   font-size: 18px;
@@ -1102,11 +1102,11 @@ svg {
   padding: 4px 35px;
 }
 .store__item--active {
-  background: #FFC533;
-  color: #FFFFFF;
+  background: #ffc533;
+  color: #ffffff;
 }
 .store__item:hover {
-  border-color: #FFB700;
+  border-color: #ffb700;
 }
 
 .products__list {
@@ -1151,14 +1151,14 @@ svg {
   margin-bottom: 9px;
 }
 .product__title:hover {
-  color: #FFB700;
+  color: #ffb700;
 }
 
 .product__desc {
   font-size: 14px;
   font-weight: 600;
   line-height: 18.2px;
-  color: #FFB700;
+  color: #ffb700;
   margin-bottom: 70px;
 }
 
@@ -1223,7 +1223,7 @@ svg {
   font-weight: 700;
 }
 .product__button-light:hover {
-  border-color: #FFB700;
+  border-color: #ffb700;
 }
 
 .books__products {
@@ -1278,7 +1278,7 @@ svg {
   font-size: 18px;
   font-weight: 600;
   line-height: 23.4px;
-  color: #FFB700;
+  color: #ffb700;
   margin-top: 19px;
   margin-bottom: 60px;
 }
@@ -1299,8 +1299,8 @@ svg {
 }
 
 .card__button {
-  background: #FFC533;
-  color: #FFFFFF;
+  background: #ffc533;
+  color: #ffffff;
   border-radius: 3px;
   padding: 18px 50px;
   font-size: 16px;
@@ -1309,7 +1309,7 @@ svg {
   margin-right: 18px;
 }
 .card__button:hover {
-  background: #FFB700;
+  background: #ffb700;
 }
 
 .footer {
@@ -1321,7 +1321,7 @@ svg {
   min-height: 270px;
   margin-top: 270px;
   background: #000203;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .footer::after {
   content: url("");
@@ -1345,7 +1345,7 @@ svg {
 }
 .footer__container::after {
   content: "";
-  border-bottom: 1px solid #FFB700;
+  border-bottom: 1px solid #ffb700;
   position: absolute;
   bottom: 21%;
   width: 100%;
@@ -1376,7 +1376,7 @@ svg {
 }
 
 .footer__menu-link:hover {
-  color: #FFB700;
+  color: #ffb700;
 }
 
 .footer__connect {
@@ -1407,7 +1407,7 @@ svg {
 }
 
 .footer__politic-link:hover {
-  color: #FFB700;
+  color: #ffb700;
 }
 
 .footer__copyright {
@@ -1455,7 +1455,7 @@ svg {
   height: 70px;
   display: flex;
   border-radius: 4px;
-  border: 2px solid #FFB700;
+  border: 2px solid #ffb700;
   padding-top: 17px;
   padding-left: 30px;
   padding-right: 15px;
@@ -1605,7 +1605,7 @@ svg {
   width: 218px;
   height: 60px;
   border-radius: 4px;
-  background: #FFC533;
+  background: #ffc533;
   left: 37px;
   top: 19px;
   color: #fff;
@@ -1618,7 +1618,7 @@ svg {
   color: #ffffff;
 }
 .basket__button:hover {
-  background: #FFB700;
+  background: #ffb700;
 }
 
 .faqs__container {

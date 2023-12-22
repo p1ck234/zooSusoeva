@@ -9,15 +9,15 @@ $baseFontSize: 18px;
 
 //colors
 $black: #000203;
-$yellow: #FFC533;
-$orange: #FFB700;
-$white: #FFFFFF;
+$yellow: #ffc533;
+$orange: #ffb700;
+$white: #ffffff;
 $grey: #545454;
 $darkGrey: #282828;
-$lightGrey: #9A9A9A;
+$lightGrey: #9a9a9a;
 
 // setups
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
 @import "./_layout.scss";
 @import "./_media.scss";
 

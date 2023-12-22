@@ -1,7 +1,7 @@
-const selectAllCheckbox = document.getElementById('selectAll');
-const checkboxes = document.querySelectorAll('.basket__list__checkinp');
+const selectAllCheckbox = document.getElementById("selectAll");
+const checkboxes = document.querySelectorAll(".basket__list__checkinp");
 
-selectAllCheckbox.addEventListener('click', () => {
+selectAllCheckbox.addEventListener("click", () => {
   const isChecked = selectAllCheckbox.checked;
 
   checkboxes.forEach((checkbox) => {

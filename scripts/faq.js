@@ -6,7 +6,6 @@ faqs.forEach((faq) => {
   });
 });
 
-
 // const list = document.querySelectorAll('.faq');
 
 // list.forEach((faq) => {
@@ -19,7 +18,6 @@ faqs.forEach((faq) => {
 //   faq.classList.remove('active');
 // });
 
-
 // const list = document.querySelectorAll('.faq');
 
 //  list.forEach((faq) => {
@@ -29,8 +27,6 @@ faqs.forEach((faq) => {
 //     });
 // });
 
-
-
 // const faqs = document.querySelectorAll(".faq");
 
 // faqs.forEach((faq) => {
@@ -39,7 +35,6 @@ faqs.forEach((faq) => {
 //     faq.classList.toggle("active");
 //   });
 // });
-
 
 // var panels = document.getElementsByClassName("faq");
 // var actives = document.getElementsByClassName('active');
@@ -71,7 +66,6 @@ faqs.forEach((faq) => {
 //       this.classList.add("active");
 //   };
 // }
-
 
 // document.querySelectorAll('.faq__question').forEach((el) => {
 //   el.addEventListener('click', () => {
