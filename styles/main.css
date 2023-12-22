@@ -9,7 +9,7 @@ body {
   width: 100%;
   margin: 0;
   overflow-x: hidden;
-  background: #ffffff;
+  background: #FFFFFF;
   color: #545454;
   font-family: "Open Sans", Helvetica, sans-serif;
   font-size: 18px;
@@ -38,12 +38,7 @@ ul li {
   list-style: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
   margin: 0;
 }
@@ -70,9 +65,9 @@ img {
 
 video {
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   -o-object-position: center;
-  object-position: center;
+     object-position: center;
   overflow-clip-margin: content-box;
   overflow: clip;
 }
@@ -102,7 +97,7 @@ table {
   position: relative;
 }
 
-input[type="checkbox"]:checked {
+input[type=checkbox]:checked {
   background-image: url("./img/icons/anon.png");
 }
 
@@ -116,7 +111,7 @@ input[type="checkbox"]:checked {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #ffb700;
+  border-bottom: 1px solid #FFB700;
   padding-bottom: 12px;
 }
 
@@ -147,9 +142,8 @@ input[type="checkbox"]:checked {
   margin-right: 0;
 }
 
-.menu__link:hover,
-.menu__link-nav:hover {
-  color: #ffb700;
+.menu__link:hover, .menu__link-nav:hover {
+  color: #FFB700;
 }
 
 .cart__cover {
@@ -160,14 +154,14 @@ input[type="checkbox"]:checked {
 
 .cart__img {
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   width: 42px;
   height: 47px;
-  fill: #ffffff;
+  fill: #FFFFFF;
   stroke: #000203;
 }
 .cart__img:hover {
-  stroke: #ffb700;
+  stroke: #FFB700;
   transition: 0.3s all;
 }
 
@@ -224,11 +218,11 @@ input[type="checkbox"]:checked {
 
 .button__dark {
   align-self: flex-start;
-  background: #ffc533;
-  color: #ffffff;
+  background: #FFC533;
+  color: #FFFFFF;
 }
 .button__dark:hover {
-  background: #ffb700;
+  background: #FFB700;
 }
 
 .button__dark-hero {
@@ -258,12 +252,12 @@ input[type="checkbox"]:checked {
 .button__light {
   background: transparent;
   color: #000203;
-  border: 3px solid #ffc533;
+  border: 3px solid #FFC533;
   font-weight: 700;
   line-height: 21.79px;
 }
 .button__light:hover {
-  border-color: #ffb700;
+  border-color: #FFB700;
 }
 
 .button__light-reviews {
@@ -288,7 +282,7 @@ input[type="checkbox"]:checked {
 
 .button__icon {
   flex-shrink: 0;
-  stroke: #ffffff;
+  stroke: #FFFFFF;
   width: 15px;
   height: 15px;
 }
@@ -330,7 +324,7 @@ input[type="checkbox"]:checked {
 
 .hero__pic {
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   max-width: 100%;
   height: auto;
 }
@@ -470,9 +464,9 @@ input[type="checkbox"]:checked {
   width: 1216px;
   height: 2112px;
   -moz-column-count: 3;
-  column-count: 3;
+       column-count: 3;
   -moz-column-gap: 20px;
-  column-gap: 20px;
+       column-gap: 20px;
 }
 .reviews__items_container::after {
   content: "";
@@ -518,7 +512,7 @@ input[type="checkbox"]:checked {
   background: rgba(255, 255, 255, 0.1);
   padding: 20px 20px 60px 20px;
   -moz-column-break-inside: avoid;
-  break-inside: avoid; /* Предотвращаем разрыв элементов на несколько столбцов */
+       break-inside: avoid; /* Предотвращаем разрыв элементов на несколько столбцов */
   margin-bottom: 20px; /* Добавляем отступ снизу для разделения элементов */
 }
 .reviews__items_text {
@@ -551,8 +545,7 @@ input[type="checkbox"]:checked {
   align-items: center;
   justify-content: flex-start;
   padding-bottom: 20px;
-  background: linear-gradient(to right, #ffb700 50%, transparent 50%),
-    linear-gradient(to right, #ffb700 50%, transparent 50%);
+  background: linear-gradient(to right, #FFB700 50%, transparent 50%), linear-gradient(to right, #FFB700 50%, transparent 50%);
   background-repeat: repeat-x;
   background-size: 18px 2px;
   background-position: left bottom;
@@ -586,16 +579,16 @@ input[type="checkbox"]:checked {
 .reviews__item {
   width: 32.7%;
   min-height: 230px;
-  border-left: 3px solid #ffb700;
-  border-top: 3px solid #ffb700;
-  border-bottom: 3px solid #ffb700;
+  border-left: 3px solid #FFB700;
+  border-top: 3px solid #FFB700;
+  border-bottom: 3px solid #FFB700;
 }
 .reviews__item:first-child {
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
 }
 .reviews__item:last-child {
-  border-right: 3px solid #ffb700;
+  border-right: 3px solid #FFB700;
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
 }
@@ -652,7 +645,7 @@ input[type="checkbox"]:checked {
 
 .introduce__photo {
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   max-width: 41%;
   margin-right: 10%;
 }
@@ -695,7 +688,7 @@ input[type="checkbox"]:checked {
 
 .introduce__text a {
   -webkit-text-decoration: 1px underline;
-  text-decoration: 1px underline;
+          text-decoration: 1px underline;
 }
 .introduce__text a:hover {
   color: #000203;
@@ -772,8 +765,7 @@ input[type="checkbox"]:checked {
   align-items: center;
   justify-content: center;
   padding-bottom: 21px;
-  background: linear-gradient(to right, #ffb700 50%, transparent 50%),
-    linear-gradient(to right, #ffb700 50%, transparent 50%);
+  background: linear-gradient(to right, #FFB700 50%, transparent 50%), linear-gradient(to right, #FFB700 50%, transparent 50%);
   background-repeat: repeat-x;
   background-size: 18px 2px;
   background-position: left bottom;
@@ -837,14 +829,14 @@ input[type="checkbox"]:checked {
 .help__photo {
   max-width: 41%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   margin-right: 10%;
 }
 
 .help__photo-decor {
   max-width: 41%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   margin-right: 0;
   margin-left: 10%;
 }
@@ -948,7 +940,7 @@ input[type="checkbox"]:checked {
 }
 
 .offer__title-link:hover {
-  color: #ffb700;
+  color: #FFB700;
 }
 
 .faqs {
@@ -1020,18 +1012,18 @@ input[type="checkbox"]:checked {
 
 .faq__answer a {
   -webkit-text-decoration: 1px underline;
-  text-decoration: 1px underline;
+          text-decoration: 1px underline;
 }
 .faq__answer a:hover {
   color: #000203;
 }
 
 .faq.active {
-  border-color: #ffb700;
+  border-color: #FFB700;
 }
 
 .faq.active + .faq {
-  border-top-color: #ffb700;
+  border-top-color: #FFB700;
 }
 
 .faq.active .faq__answer {
@@ -1042,7 +1034,7 @@ input[type="checkbox"]:checked {
 
 .faq.active svg {
   transform: rotate(180deg);
-  stroke: #ffb700;
+  stroke: #FFB700;
 }
 
 svg {
@@ -1051,7 +1043,7 @@ svg {
 
 .faq__icon {
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   width: 24px;
   height: 24px;
   stroke: #545454;
@@ -1097,7 +1089,7 @@ svg {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 2px solid #ffc533;
+  border: 2px solid #FFC533;
   background: transparent;
   color: #000203;
   font-size: 18px;
@@ -1110,11 +1102,11 @@ svg {
   padding: 4px 35px;
 }
 .store__item--active {
-  background: #ffc533;
-  color: #ffffff;
+  background: #FFC533;
+  color: #FFFFFF;
 }
 .store__item:hover {
-  border-color: #ffb700;
+  border-color: #FFB700;
 }
 
 .products__list {
@@ -1147,19 +1139,9 @@ svg {
   left: 10px;
 }
 
-.card__price-discont {
-  color: #545454;
-  font-family: Open Sans;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 130%; /* 20.8px */
-  width: 200px;
-  text-decoration: line-through;
-}
-
 .product__pic {
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 .product__title {
@@ -1169,14 +1151,14 @@ svg {
   margin-bottom: 9px;
 }
 .product__title:hover {
-  color: #ffb700;
+  color: #FFB700;
 }
 
 .product__desc {
   font-size: 14px;
   font-weight: 600;
   line-height: 18.2px;
-  color: #ffb700;
+  color: #FFB700;
   margin-bottom: 70px;
 }
 
@@ -1205,7 +1187,7 @@ svg {
 .product__price-discount:after {
   content: "";
   font-family: "Open Sans", Helvetica, sans-serif;
-  border-bottom: 2px solid #ffb700;
+  border-bottom: 2px solid #FFB700;
   position: absolute;
   bottom: 181%;
   left: 3%;
@@ -1234,14 +1216,14 @@ svg {
 .product__button-light {
   background: transparent;
   color: #000203;
-  border: 2px solid #ffc533;
+  border: 2px solid #FFC533;
   border-radius: 3px;
   padding: 9px 28px;
   font-size: 16px;
   font-weight: 700;
 }
 .product__button-light:hover {
-  border-color: #ffb700;
+  border-color: #FFB700;
 }
 
 .books__products {
@@ -1261,7 +1243,7 @@ svg {
 
 .card__img {
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   max-width: 100%;
   height: auto;
 }
@@ -1296,7 +1278,7 @@ svg {
   font-size: 18px;
   font-weight: 600;
   line-height: 23.4px;
-  color: #ffb700;
+  color: #FFB700;
   margin-top: 19px;
   margin-bottom: 60px;
 }
@@ -1304,6 +1286,15 @@ svg {
 .card__purchase {
   display: flex;
   align-items: center;
+}
+
+.card__price-discont {
+  color: #545454;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 700;
+  width: 200px;
+  text-decoration: line-through;
 }
 
 .card__price {
@@ -1317,8 +1308,8 @@ svg {
 }
 
 .card__button {
-  background: #ffc533;
-  color: #ffffff;
+  background: #FFC533;
+  color: #FFFFFF;
   border-radius: 3px;
   padding: 18px 50px;
   font-size: 16px;
@@ -1327,7 +1318,7 @@ svg {
   margin-right: 18px;
 }
 .card__button:hover {
-  background: #ffb700;
+  background: #FFB700;
 }
 
 .footer {
@@ -1339,7 +1330,7 @@ svg {
   min-height: 270px;
   margin-top: 270px;
   background: #000203;
-  color: #ffffff;
+  color: #FFFFFF;
 }
 .footer::after {
   content: url("");
@@ -1363,7 +1354,7 @@ svg {
 }
 .footer__container::after {
   content: "";
-  border-bottom: 1px solid #ffb700;
+  border-bottom: 1px solid #FFB700;
   position: absolute;
   bottom: 21%;
   width: 100%;
@@ -1394,7 +1385,7 @@ svg {
 }
 
 .footer__menu-link:hover {
-  color: #ffb700;
+  color: #FFB700;
 }
 
 .footer__connect {
@@ -1425,7 +1416,7 @@ svg {
 }
 
 .footer__politic-link:hover {
-  color: #ffb700;
+  color: #FFB700;
 }
 
 .footer__copyright {
@@ -1473,7 +1464,7 @@ svg {
   height: 70px;
   display: flex;
   border-radius: 4px;
-  border: 2px solid #ffb700;
+  border: 2px solid #FFB700;
   padding-top: 17px;
   padding-left: 30px;
   padding-right: 15px;
@@ -1482,7 +1473,7 @@ svg {
   position: relative;
   display: flex;
 }
-.basket__list_check input[type="checkbox"] {
+.basket__list_check input[type=checkbox] {
   position: absolute;
   opacity: 0;
   width: 26px;
@@ -1497,7 +1488,7 @@ svg {
   background-position: center;
   cursor: pointer;
 }
-.basket__list_check input[type="checkbox"]:checked + .basket__list_checkbox {
+.basket__list_check input[type=checkbox]:checked + .basket__list_checkbox {
   background-image: url(/img/icons/checkmark.svg);
 }
 .basket__list__text {
@@ -1571,7 +1562,7 @@ svg {
   width: 28px;
   height: 34px;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   fill: #ffffff;
   stroke: #000203;
 }
@@ -1623,7 +1614,7 @@ svg {
   width: 218px;
   height: 60px;
   border-radius: 4px;
-  background: #ffc533;
+  background: #FFC533;
   left: 37px;
   top: 19px;
   color: #fff;
@@ -1636,7 +1627,7 @@ svg {
   color: #ffffff;
 }
 .basket__button:hover {
-  background: #ffb700;
+  background: #FFB700;
 }
 
 .faqs__container {
@@ -1708,4 +1699,4 @@ svg {
   align-self: center;
   padding: 17px 55px;
   margin: 0 auto;
-} /*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

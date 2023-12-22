@@ -21,7 +21,6 @@
   padding-top: 31px;
 }
 
-
 .card__title {
   font-weight: 600;
   font-size: 40px;
@@ -56,7 +55,14 @@
   display: flex;
   align-items: center;
 }
-
+.card__price-discont {
+  color: #545454;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 700;
+  width: 200px;
+  text-decoration: line-through;
+}
 .card__price {
   font-size: 24px;
   font-weight: 700;
