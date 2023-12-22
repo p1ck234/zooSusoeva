@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Шпаргалки - Зоопсихолог Сысоева Ольга</title>
+    <title>Вебинар: «Этология для чайников» - Зоопсихолог Сысоева Ольга</title>
     <link rel="stylesheet" href="./styles/main.css" />
   </head>
 
@@ -44,98 +44,78 @@
           </div>
         </header>
 
-        <nav class="breadcrumbs">
+        <nav class="breadcrumbs breadcrumbs__card">
           <div class="container breadcrumbs__container">
-            <ul class="breadcrumbs__list">
-              <li class="breadcrumbs__item">
+            <ul class="breadcrumbs__list breadcrumbs__list-card">
+              <li class="breadcrumbs__item breadcrumbs__item-card">
                 <a href="./index.html" class="breadcrumbs__link">Главная</a>
               </li>
-              <li class="breadcrumbs__item">
+
+              <li class="breadcrumbs__item breadcrumbs__item-card">
                 <a href="./webinars.html" class="breadcrumbs__link">Магазин</a>
               </li>
-              <li class="breadcrumbs__item">Шпаргалки</li>
+
+              <li class="breadcrumbs__item breadcrumbs__item-card">
+                <a href="./cheat-sheets.html" class="breadcrumbs__link"
+                  >Шпаргалки</a
+                >
+              </li>
+
+              <li class="breadcrumbs__item breadcrumbs__item-card">
+                «Шпаргалка о поведении»
+              </li>
             </ul>
           </div>
         </nav>
 
-        <section class="cheat-sheets store">
-          <div class="container store__container">
-            <h1 class="main__title">Магазин</h1>
+        <section class="card-ethology card">
+          <div class="container card__container">
+            <div class="card__content">
+              <div class="card__cover">
+                <img
+                  src="./img/behaviorCheat-img.jpg"
+                  class="card__img"
+                  alt="ethology"
+                />
+              </div>
 
-            <nav class="store__nav">
-              <ul class="store__list">
-                <a href="./webinars.html" class="store__link">
-                  <li class="store__item">Вебинары</li>
-                </a>
+              <div class="card__desc">
+                <article class="card__text">
+                  <h1 class="card__title">«Шпаргалка о поведении»</h1>
+                  <p>
+                    Шпаргалка — это короткая инструкция из 13 страниц, в формате
+                    текстового документа.
+                  </p>
 
-                <a href="./books.html" class="store__link">
-                  <li class="store__item">Книги</li>
-                </a>
+                  <p>
+                    Вы можете распечатать и повесить на видное место, чтобы все
+                    члены семьи не забывали правила общения с собакой.
+                  </p>
+                  <p>
+                    Дополнительно: видео в формате «вопрос-ответ» с ответами
+                    на самые популярные вопросы.
+                  </p>
+                </article>
 
-                <a href="./cheat-sheets.html" class="store__link">
-                  <li class="store__item store__item--active">Шпаргалки</li>
-                </a>
+                <div class="card__name">*Электронная шпаргалка</div>
 
-                <a href="./webinar-kits.html" class="store__link">
-                  <li class="store__item">Комплекты вебинаров</li>
-                </a>
-              </ul>
-            </nav>
+                <div class="card__purchase">
+                  <div class="card__price">800 ₽</div>
 
-            <div class="cheat-sheets products">
-              <ul class="products__list">
-                <li class="products__item product">
-                  <div class="product__img product__img-discount">
-                    <a href="./behaviorCheat.html" class="product__link"
-                      ><img
-                        src="./img/cheat-img1.jpg"
-                        class="product__pic"
-                        alt="Шпаргалка о поведении"
-                    /></a>
-                  </div>
+                  <a href="#" class="card__button">В корзину</a>
 
-                  <div class="product__title">
-                    <a href="./behaviorCheat.html" class="product__title-link"
-                      >«Шпаргалка о поведении»</a
-                    >
-                  </div>
-                  <div class="product__desc">Электронная шпаргалка</div>
+                  <a
+                    href="./webinars.html"
+                    class="button button__light button__light-prev"
+                  >
+                    <span class="button__text">Назад</span>
 
-                  <ul class="product__purchase">
-                    <li class="product__price product__price-discount">
-                      800 ₽
-                    </li>
-                    <li class="product__button">
-                      <a href="#" class="product__button-light">В корзину</a>
-                    </li>
-                  </ul>
-                </li>
-
-                <li class="products__item product">
-                  <div class="product__img">
-                    <a href="./ethologyCheat.html" class="product__link"
-                      ><img
-                        src="./img/cheat-img2.jpg"
-                        class="product__pic"
-                        alt="Этология для чайников"
-                    /></a>
-                  </div>
-
-                  <div class="product__title">
-                    <a href="./ethologyCheat.html" class="product__title-link"
-                      >«Этология для чайников»</a
-                    >
-                  </div>
-                  <div class="product__desc">Электронная шпаргалка</div>
-
-                  <ul class="product__purchase">
-                    <li class="product__price">1600 ₽</li>
-                    <li class="product__button">
-                      <a href="#" class="product__button-light">В корзину</a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
+                    <svg class="button__icon button__icon--dark">
+                      <use xlink:href="./img/sprite.svg#arrow"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </section>
