@@ -1,0 +1,126 @@
+.close__img {
+    position: absolute;
+    top: 23px;
+    right: 23px;
+    width: 58px;
+    height: 58px;
+    stroke: $black;
+    transition: stroke 0.3s ease;
+
+    &:hover {
+        cursor: pointer;
+        stroke: $orange;
+    }
+}
+
+.burger__icon {
+    display: none;
+    stroke: $black;
+    width: 44px;
+    height: 40px;
+    transition: stroke 0.3s ease;
+
+    &:hover {
+        stroke: $orange;
+        cursor: pointer;
+    }
+}
+
+.burger__nav {
+    display: none;
+    position: absolute;
+    top: -15px;
+    right: -150%;
+    margin-right: -2.5%;
+    padding: 104px 78px;
+    width: 100%;
+    max-width: 413px;
+    min-height: 657px;
+    border: 1px solid $orange;
+    background: $white;
+    transition: right .5s linear;
+    z-index: 10;
+
+    &::after {
+        content: '';
+        display: block;
+        width: 182px;
+        height: 192px;
+        background-image: url(../../img/burger_dog.png);
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: 1;
+    }
+
+
+    .menu__list {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .menu__item {
+        &:last-child {
+            display: block;
+
+            .menu__link-nav {
+                display: flex;
+                align-items: center;
+            }
+
+            &:hover {
+                .cart__img {
+                    stroke: $orange;
+                    transition: 0.3s all;
+                }
+            }
+
+            & .cart__img {
+                margin-left: 16px;
+                width: 19px;
+                height: 21px;
+            }
+        }
+    }
+
+    .social__img {
+        width: 33.962px;
+        height: 37.358px;
+    }
+}
+
+@media (max-width: 1080px) {
+    .burger__icon {
+        display: block;
+    }
+
+    .burger__nav {
+        display: flex;
+        flex-direction: column;
+
+
+        & .header__social {
+            display: flex;
+        }
+    }
+
+    .close__img {
+        display: block;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .burger__nav {
+        top: -24px;
+        margin-right: -2.5%;
+    }
+}
+
+@media (max-width: 360px) {
+    .burger__nav {
+        width: 100vw;
+        margin-right: -20px;
+    }
+}
