@@ -904,6 +904,21 @@ input[type=checkbox]:checked {
   margin-bottom: 52px;
 }
 
+@media (max-width: 1080px) {
+  .title {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 480px) {
+  .title {
+    font-size: 32px;
+  }
+}
+@media (max-width: 360px) {
+  .title {
+    margin-bottom: 20px;
+  }
+}
 .about {
   padding-top: 20px;
   margin-bottom: 120px;
@@ -936,9 +951,37 @@ input[type=checkbox]:checked {
     top: 64%;
   }
 }
+@media (max-width: 1080px) {
+  .about__content::before {
+    top: 60%;
+  }
+}
+@media (max-width: 900px) {
+  .about__content::before {
+    width: 65%;
+    min-width: 440px;
+    top: 34%;
+    left: 12%;
+  }
+}
+@media (max-width: 480px) {
+  .about {
+    margin-bottom: 60px;
+  }
+  .about__content::before {
+    min-width: 340px;
+    top: 23%;
+    left: -10%;
+  }
+}
+@media (max-width: 360px) {
+  .about__content::before {
+    top: 24%;
+  }
+}
 .introduce {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   margin: 0 auto;
 }
@@ -947,7 +990,6 @@ input[type=checkbox]:checked {
   -o-object-fit: cover;
      object-fit: cover;
   max-width: 41%;
-  margin-right: 10%;
 }
 
 .introduce__photo-decor {
@@ -971,9 +1013,10 @@ input[type=checkbox]:checked {
 }
 
 .introduce__text {
+  width: 50%;
+  min-width: 580px;
   font-size: 18px;
-  line-height: 23.4px;
-  padding-right: 20px;
+  line-height: 130%;
 }
 
 .introduce__text p {
@@ -1006,6 +1049,53 @@ input[type=checkbox]:checked {
   padding-right: 25px;
 }
 
+@media (max-width: 1080px) {
+  .introduce {
+    align-items: flex-start;
+  }
+  .introduce__photo {
+    max-width: 47%;
+    margin-right: 30px;
+  }
+  .introduce__text {
+    min-width: 400px;
+    margin-top: 30px;
+    max-width: 470px;
+    width: 100%;
+  }
+}
+@media (max-width: 900px) {
+  .introduce {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .introduce__photo {
+    width: 100%;
+    max-width: 470px;
+    margin-right: 0;
+  }
+  .introduce__text {
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+  }
+}
+@media (max-width: 480px) {
+  .introduce__text {
+    min-width: auto;
+  }
+  .introduce__text p {
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 360px) {
+  .introduce__text {
+    margin-top: 20px;
+  }
+  .introduce__text p {
+    font-size: 14px;
+  }
+}
 .benefit {
   padding-top: 20px;
   margin-bottom: 116px;

@@ -6,30 +6,61 @@
 .about__content {
   position: relative;
 
-    &::before {
-      content: url('');
-      background: no-repeat;
-      background-image: url(../../img/pretenzii.png);
-      width: calc(var(--index)*20);
-      height: calc(var(--index)*10);
-      background-size: 100%;
-      position: absolute;
-      top: 68%;
-      left: -21%;
-      z-index: 2;
-    }
+  &::before {
+    content: url('');
+    background: no-repeat;
+    background-image: url(../../img/pretenzii.png);
+    width: calc(var(--index)*20);
+    height: calc(var(--index)*10);
+    background-size: 100%;
+    position: absolute;
+    top: 68%;
+    left: -21%;
+    z-index: 2;
   }
+}
 
-  @media (max-width: 1560px) {
-   
-    .about__content::before {
-      top: 69%;
-      left: -8%;
-    }
-  }
+@media (max-width: 1560px) {
 
-  @media (max-width: 1140px) {
-    .about__content::before {
-      top: 64%;
-    }
+  .about__content::before {
+    top: 69%;
+    left: -8%;
   }
+}
+
+@media (max-width: 1140px) {
+  .about__content::before {
+    top: 64%;
+  }
+}
+
+@media (max-width: 1080px) {
+  .about__content::before {
+    top: 60%;
+  }
+}
+
+@media (max-width: 900px) {
+  .about__content::before {
+    width: 65%;
+    min-width: 440px;
+    top: 34%;
+    left: 12%;
+  }
+}
+@media (max-width: 480px) {
+  .about {
+    margin-bottom: 60px;
+  }
+  .about__content::before {
+    min-width: 340px;
+    top: 23%;
+    left: -10%;
+  }
+}
+
+@media (max-width: 360px) {
+  .about__content::before {
+    top: 24%;
+  }
+}
