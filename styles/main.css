@@ -911,14 +911,10 @@ input[type=checkbox]:checked {
   margin-bottom: 52px;
 }
 
-@media (max-width: 1080px) {
-  .title {
-    margin-bottom: 30px;
-  }
-}
 @media (max-width: 480px) {
   .title {
     font-size: 32px;
+    margin-bottom: 30px;
   }
 }
 @media (max-width: 360px) {
@@ -1113,12 +1109,13 @@ input[type=checkbox]:checked {
   background: left bottom no-repeat;
   background-image: url("../../img/gsd.png");
   width: calc(var(--index) * 12.5);
+  max-width: 350px;
   height: calc(var(--index) * 21);
   background-size: 100%;
   position: absolute;
-  bottom: -160px;
+  top: -150px;
   right: 0;
-  z-index: 2;
+  z-index: -1;
 }
 
 @media (max-width: 1750px) {
@@ -1136,25 +1133,70 @@ input[type=checkbox]:checked {
 }
 @media (max-width: 1505px) {
   .benefit::after {
-    width: calc(var(--index) * 6);
-    height: calc(var(--index) * 21);
-    bottom: -73px;
+    display: none;
   }
 }
-@media (max-width: 1469px) {
+@media (max-width: 1080px) {
   .benefit::after {
-    display: none;
+    display: block;
+    top: 50px;
+    height: 500px;
+    width: 278px;
+  }
+}
+@media (max-width: 900px) {
+  .benefit::after {
+    top: 250px;
+  }
+}
+@media (max-width: 650px) {
+  .benefit::after {
+    width: 230px;
+    top: 125px;
+  }
+}
+@media (max-width: 480px) {
+  .benefit {
+    margin-bottom: 60px;
+  }
+  .benefit::after {
+    width: 135px;
+    top: 175px;
+  }
+}
+@media (max-width: 360px) {
+  .benefit::after {
+    width: 75px;
+    top: 0;
   }
 }
 .features {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  gap: 30px;
 }
 
+@media (max-width: 1080px) {
+  .features {
+    max-width: 660px;
+  }
+}
+@media (max-width: 650px) {
+  .features {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+@media (max-width: 480px) {
+  .features {
+    align-items: center;
+  }
+}
 .feature {
   display: flex;
   flex-direction: column;
+  min-width: 290px;
 }
 
 .feature__header {
@@ -1189,6 +1231,19 @@ input[type=checkbox]:checked {
   max-width: 290px;
 }
 
+@media (max-width: 480px) {
+  .feature__content-text {
+    font-size: 20px;
+  }
+}
+@media (max-width: 360px) {
+  .feature__header-text {
+    font-size: 54px;
+  }
+  .feature__content-text {
+    font-size: 16px;
+  }
+}
 .help {
   padding-top: 20px;
   margin-bottom: 117px;

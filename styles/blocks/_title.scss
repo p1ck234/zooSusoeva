@@ -11,20 +11,15 @@
   margin-bottom: 52px;
 }
 
-@media (max-width: 1080px){
-  .title {
-    margin-bottom: 30px;
-  }
-}
-
 @media (max-width: 480px) {
 
   .title {
     font-size: 32px;
+    margin-bottom: 30px;
   }
 }
 
-@media (max-width: 360px){
+@media (max-width: 360px) {
   .title {
     margin-bottom: 20px;
   }
