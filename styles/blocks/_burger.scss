@@ -31,7 +31,7 @@
     position: absolute;
     top: -15px;
     right: -150%;
-    margin-right: -40px;
+    margin-right: -2.5%;
     padding: 104px 78px;
     width: 100%;
     max-width: 413px;
@@ -98,7 +98,6 @@
     .burger__nav {
         display: flex;
         flex-direction: column;
-        margin-right: -40px;
 
 
         & .header__social {
@@ -115,12 +114,13 @@
 @media (max-width: 480px) {
     .burger__nav {
         top: -24px;
-        margin-right: -20px;
+        margin-right: -2.5%;
     }
 }
 
 @media (max-width: 360px) {
     .burger__nav {
         width: 100vw;
+        margin-right: -20px;
     }
 }
