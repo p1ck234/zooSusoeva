@@ -9,13 +9,8 @@
   gap: 32px;
 }
 
-.menu__item:last-child {
-  display: none;
-}
-
 .menu__link,
 .menu__link-nav {
-
   &:hover {
     color: $orange;
   }
