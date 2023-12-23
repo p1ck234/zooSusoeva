@@ -36,9 +36,9 @@
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  width: 26%;
+  width: 313px;
   padding: 20px 30px;
-  margin-top: 88px;
+  margin-top: 60px;
 }
 
 .button__light {
@@ -100,7 +100,7 @@
 
 
 @media (max-width : 480px) {
-  
+
   .button__light-reviews {
     max-width: 190px;
     min-width: auto;
@@ -108,7 +108,7 @@
 }
 
 @media (max-width : 420px) {
-  
+
   .button__light-reviews {
     max-width: 254px;
     width: 100%;
@@ -122,7 +122,11 @@
     align-self: center;
   }
 
-  .button__light-reviews { 
+  .button__light-reviews {
     border-width: 1px;
+  }
+
+  .button__dark-offer {
+    max-width: 253px;
   }
 }

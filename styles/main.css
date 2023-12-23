@@ -425,9 +425,9 @@ input[type=checkbox]:checked {
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  width: 26%;
+  width: 313px;
   padding: 20px 30px;
-  margin-top: 88px;
+  margin-top: 60px;
 }
 
 .button__light {
@@ -496,6 +496,9 @@ input[type=checkbox]:checked {
   }
   .button__light-reviews {
     border-width: 1px;
+  }
+  .button__dark-offer {
+    max-width: 253px;
   }
 }
 .hero {
@@ -1412,29 +1415,49 @@ input[type=checkbox]:checked {
 }
 .offers {
   padding-top: 20px;
-  margin-bottom: 114px;
+  margin-bottom: 120px;
 }
 
 .offers__list {
   display: flex;
+  align-items: flex-start;
   justify-content: space-between;
+  gap: 10px;
+  row-gap: 30px;
+  flex-wrap: wrap;
 }
 
+@media (max-width: 360px) {
+  .offers__list {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 60px;
+  }
+}
 .offer {
   display: flex;
   flex-direction: column;
-  min-height: 525px;
   border-radius: 4px;
   overflow: hidden;
 }
 
 .offers__item {
-  width: 32%;
+  width: 25%;
+  max-width: 289px;
+  transition: transform 0.3s ease-in-out;
+}
+.offers__item:hover {
+  transform: translateY(-12px);
 }
 
 .offer__content {
   margin-top: 30px;
   text-align: center;
+}
+
+.offer__cover {
+  display: flex;
+  justify-content: center;
 }
 
 .offer__title {
@@ -1449,6 +1472,56 @@ input[type=checkbox]:checked {
   color: #FFB700;
 }
 
+@media (max-width: 1080px) {
+  .offers__item {
+    width: 32%;
+    max-width: 320px;
+  }
+}
+@media (max-width: 767px) {
+  .offers__item {
+    width: 49%;
+    max-width: 320px;
+  }
+}
+@media (max-width: 600px) {
+  .offers__item {
+    width: 49%;
+    max-width: 270px;
+  }
+}
+@media (max-width: 550px) {
+  .offers__item {
+    width: 48%;
+    flex-grow: 1;
+  }
+}
+@media (max-width: 480px) {
+  .offers__item {
+    max-width: 210px;
+  }
+  .offer__text {
+    font-size: 16px;
+    text-align: left;
+    line-height: 130%;
+  }
+}
+@media (max-width: 360px) {
+  .offers__item {
+    width: 100%;
+    height: 100%;
+    max-width: 220px;
+  }
+  .offer__content {
+    margin-top: 10px;
+  }
+  .offer__title {
+    margin-bottom: 10px;
+  }
+  .offer__text {
+    font-size: 14px;
+  }
+}
 .faqs {
   padding-top: 20px;
 }

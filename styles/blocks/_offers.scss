@@ -1,9 +1,21 @@
 .offers {
   padding-top: 20px;
-  margin-bottom: 114px;
+  margin-bottom: 120px;
 }
 
 .offers__list {
   display: flex;
+  align-items: flex-start;
   justify-content: space-between;
+  gap: 10px;
+  row-gap: 30px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 360px) {
+  .offers__list {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 60px;
+  }
 }
