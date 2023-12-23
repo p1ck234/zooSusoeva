@@ -76,42 +76,43 @@
       </header>
 
       <section class="section hero">
-        <div class="hero__img-right">
-          <img src="./img/dog-hero-right.png" class="hero__pic hero__pic-right" alt="decor" />
-        </div>
-
-        <div class="hero__img-left">
-          <img src="./img/dog-hero-left.png" class="hero__pic hero__pic-left" alt="decor" />
-        </div>
-
         <div class="container hero__container">
           <div class="hero__main">
-            <h1 class="hero__title">Работаю с хозяином, а не с собакой!</h1>
+            <div class="hero__info">
+              <h1 class="hero__title">Работаю с&#160хозяином, а&#160не&#160с&#160собакой!</h1>
 
-            <div class="hero__desc">
-              <p class="hero__text">
-                Если ваша собака метит, проявляет агрессию, портит вещи
-                или просто вас не слушается?<br />
-                Научитесь понимать её и станьте для неё авторитетом.
-              </p>
+              <div class="hero__desc">
+                <p class="hero__text">
+                  Если ваша собака метит, проявляет агрессию, портит вещи
+                  или просто вас не слушается?<br />
+                  Научитесь понимать её и станьте для неё авторитетом.
+                </p>
 
-              <p class="hero__text">
-                Хватит дрессировать собаку! <br />
-                Если хотите наладить гармоничные отношения с собакой,
-                узнайте, как.
-              </p>
+                <p class="hero__text">
+                  Хватит дрессировать собаку! <br />
+                  Если хотите наладить гармоничные отношения с собакой,
+                  узнайте, как.
+                </p>
+              </div>
+              <a href="#" class="button button__dark button__dark-hero">
+                <span class="button__text">Перейти в каталог</span>
+                <svg class="button__icon">
+                  <use xlink:href="./img/sprite.svg#arrow"></use>
+                </svg>
+              </a>
             </div>
 
-            <a href="#" class="button button__dark button__dark-hero">
-              <span class="button__text">Перейти в каталог</span>
+            <div class="hero__img-right">
+              <img src="./img/dog-hero-right.png" class="hero__pic hero__pic-right" alt="decor" />
+            </div>
 
-              <svg class="button__icon">
-                <use xlink:href="./img/sprite.svg#arrow"></use>
-              </svg>
-            </a>
+
           </div>
 
           <div class="reviews hero__reviews">
+            <div class="hero__img-left">
+              <img src="./img/dog-hero-left.png" class="hero__pic hero__pic-left" alt="decor" />
+            </div>
             <ul class="reviews__list">
               <li class="reviews__item review">
                 <div class="review__header">
@@ -185,6 +186,7 @@
             </a>
           </div>
         </div>
+
       </section>
 
       <section class="section about" id="about">
@@ -644,6 +646,7 @@
 
   <script src="./scripts/faq.js"></script>
   <script src="./scripts/burgerMenu.js"></script>
+  <script src="./scripts/hideElem.js"></script>
   <script src="./scripts/menu.js"></script>
 </body>
 

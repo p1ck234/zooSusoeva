@@ -128,7 +128,6 @@ input[type=checkbox]:checked {
   position: relative;
   display: flex;
   padding-top: 15px;
-  margin-bottom: 60px;
   z-index: 10;
 }
 
@@ -408,7 +407,7 @@ input[type=checkbox]:checked {
 
 .button__dark-hero {
   border-radius: 0;
-  padding: 21px 63px;
+  padding: 20px 60px;
 }
 
 .button__dark-introduse {
@@ -471,36 +470,33 @@ input[type=checkbox]:checked {
   stroke: #000203;
 }
 
+@media (max-width: 360px) {
+  .button__dark-hero {
+    padding: 20px 30px;
+    align-self: center;
+  }
+}
 .hero {
+  padding-top: 60px;
   display: flex;
   position: relative;
   margin-bottom: 116px;
-}
-.hero::before {
-  content: url("");
-  background: left bottom no-repeat;
-  background-image: url("../../img/vospitanie.png");
-  width: calc(var(--index) * 12);
-  height: calc(var(--index) * 9);
-  background-size: 100%;
-  position: absolute;
-  top: 3%;
-  right: 14%;
-  z-index: 2;
+  background-image: url(../../img/dog-hero-right.png);
+  background-repeat: no-repeat;
+  background-size: 35%;
+  background-position: right top;
 }
 
 .hero__img-right {
-  width: calc(var(--index) * 23);
-  position: absolute;
-  right: 0;
-  top: -6vh;
+  display: none;
 }
 
 .hero__img-left {
-  width: calc(var(--index) * 13);
+  width: 392px;
   position: absolute;
   bottom: 0;
-  left: 0;
+  left: -340px;
+  z-index: -1;
 }
 
 .hero__pic {
@@ -511,22 +507,27 @@ input[type=checkbox]:checked {
 }
 
 .hero__main {
-  margin-bottom: 76px;
+  margin-bottom: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero__info {
+  width: 64%;
+  max-width: 636px;
 }
 
 .hero__title {
-  width: 44%;
   font-size: 40px;
   font-weight: 700;
   color: #000203;
-  line-height: 44px;
+  line-height: 110%;
   text-transform: uppercase;
-  margin-bottom: 27px;
+  margin-bottom: 30px;
 }
 
 .hero__desc {
-  width: 52%;
-  margin-bottom: 65px;
+  margin-bottom: 60px;
 }
 
 .hero__text {
@@ -538,6 +539,7 @@ input[type=checkbox]:checked {
 }
 
 .hero__reviews {
+  position: relative;
   display: flex;
   align-items: center;
   width: 90%;
@@ -564,63 +566,66 @@ input[type=checkbox]:checked {
     right: 14%;
   }
 }
-/*.hero__img-right*/
-@media (max-width: 1710px) {
+@media (max-width: 1080px) {
+  .hero {
+    padding-top: 50px;
+    background-size: 50%;
+    background-position: right top;
+  }
+  .hero__main {
+    margin-bottom: 120px;
+  }
+  .hero__info {
+    max-width: 472px;
+  }
+  .hero__title {
+    line-height: 130%;
+  }
+  .hero__text {
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 480px) {
+  .hero {
+    background-image: none;
+    padding-top: 30px;
+  }
+  .hero__main {
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .hero__info {
+    width: 100%;
+  }
   .hero__img-right {
-    top: -6.5vh;
-    width: calc(var(--index) * 23);
+    display: block;
+    position: relative;
+    margin-bottom: 30px;
+    width: 100%;
+    order: -1;
+  }
+  .hero__img-right .hero__pic {
+    max-width: 440px;
+    width: 100%;
   }
 }
-@media (max-width: 1705px) {
+@media (max-width: 360px) {
+  .hero {
+    padding-top: 10px;
+  }
+  .hero__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .hero__img-right {
-    top: -7.5vh;
-    width: calc(var(--index) * 22);
+    margin-bottom: 20px;
   }
-}
-@media (max-width: 1209px) {
-  .hero__img-right {
-    top: -4vh;
-  }
-}
-/*.hero__img-left*/
-@media (max-width: 1883px) {
-  .hero__img-left {
-    width: calc(var(--index) * 13);
-  }
-}
-@media (max-width: 1840px) {
-  .hero__img-left {
-    width: calc(var(--index) * 12);
-  }
-}
-@media (max-width: 1816px) {
-  .hero__img-left {
-    width: calc(var(--index) * 10);
-  }
-}
-@media (max-width: 1680px) {
-  .hero__img-left {
-    width: calc(var(--index) * 9);
-  }
-}
-@media (max-width: 1668px) {
-  .hero__img-left {
-    width: calc(var(--index) * 8);
-  }
-}
-@media (max-width: 1599px) {
-  .hero__img-left {
-    width: calc(var(--index) * 7);
-  }
-}
-@media (max-width: 1480px) {
-  .hero__img-left {
-    width: calc(var(--index) * 6);
-  }
-}
-@media (max-width: 1458px) {
-  .hero__img-left {
-    display: none;
+  .hero__title {
+    font-size: 32px;
   }
 }
 .reviews__container {
