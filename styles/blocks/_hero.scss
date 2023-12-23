@@ -2,7 +2,7 @@
   padding-top: 60px;
   display: flex;
   position: relative;
-  margin-bottom: 116px;
+  margin-bottom: 120px;
   background-image: url(../../img/dog-hero-right.png);
   background-repeat: no-repeat;
   background-size: 35%;
@@ -11,34 +11,13 @@
 
 .hero__img-right {
   display: none;
-  // width: calc(var(--index)*23);
-  // position: absolute;
-  // height: 100%;
-  // right: 0;
-  // top: -6vh;
-  // z-index: -1;
-
-  // &::before {
-  //   content: url('');
-  //   background: left bottom no-repeat;
-  //   background-image: url('../../img/vospitanie.png');
-  //   width: calc(var(--index)*12);
-  //   height: calc(var(--index)*9);
-  //   background-size: 100%;
-  //   position: absolute;
-  //   top: 7%;
-  //   left: 30px;
-  //   z-index: 2;
-  // }
 }
 
 .hero__img-left {
-  // width: calc(var(--index)*13);
   width: 392px;
   position: absolute;
   bottom: 0;
-  left: -340px;
-  z-index: -1;
+  left: -350px;
 }
 
 .hero__pic {
@@ -51,7 +30,7 @@
   margin-bottom: 80px;
   display: flex;
   justify-content: space-between;
-  
+
 }
 
 .hero__info {
@@ -82,19 +61,13 @@
 }
 
 .hero__reviews {
+  width: 92%;
   position: relative;
   display: flex;
   align-items: center;
-  width: 90%;
+  gap: 30px;
+  justify-content: flex-start;
 }
-
-@media (max-width: 1172px) {
-  .hero__reviews {
-    width: 100%;
-  }
-}
-
-/*Более изящного способа для позиционирования декора пока не нашла, в поисках*/
 
 /*.hero::before*/
 @media (max-width: 1710px) {
@@ -115,36 +88,13 @@
   }
 }
 
-// /*.hero__img-right*/
-// @media (max-width: 1710px) {
-
-//   .hero__img-right {
-//     top: -6.5vh;
-//     width: calc(var(--index)*23);
-//   }
-// }
-
-// @media (max-width: 1705px) {
-
-//   .hero__img-right {
-//     top: -7.5vh;
-//     width: calc(var(--index)*22);
-//   }
-// }
-
-// @media (max-width: 1209px) {
-
-//   .hero__img-right {
-//     top: -4vh;
-//   }
-// }
-
 @media (max-width: 1080px) {
   .hero {
     padding-top: 50px;
     background-size: 50%;
     background-position: right top;
   }
+
   .hero__main {
     margin-bottom: 120px;
   }
@@ -161,13 +111,48 @@
     margin-bottom: 10px;
   }
 
- 
+  .hero__reviews {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    gap: 20px;
+    // flex-wrap: wrap;
+  }
+
+  .hero__img-left {
+    max-width: 218px;
+    width: 100%;
+    left: -50px;
+    z-index: -1;
+  }
 }
+
+@media (max-width: 900px) {
+  .hero__img-left {
+    right: 5%;
+    top: -10%;
+    width: 128px;
+    left: auto;
+  }
+
+}
+
+@media (max-width: 700px) {
+  .hero__reviews {
+    justify-content: flex-start;
+  }
+
+  .hero__img-left {
+    left: 62%;
+  }
+}
+
 
 @media (max-width: 480px) {
   .hero {
-  background-image: none;
-  padding-top: 30px;
+    margin-bottom: 60px;
+    background-image: none;
+    padding-top: 30px;
   }
 
   .hero__main {
@@ -181,7 +166,7 @@
   .hero__info {
     width: 100%;
   }
-  
+
   .hero__img-right {
     display: block;
     position: relative;
@@ -194,6 +179,25 @@
       width: 100%;
     }
 
+  }
+
+  .hero__reviews {
+    justify-content: space-between;
+  }
+
+}
+
+@media (max-width: 420px) {
+  .hero__reviews {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 137px;
+  }
+
+  .hero__img-left {
+    top: -97px;
+    left: auto;
+    right: auto;
   }
 
 }

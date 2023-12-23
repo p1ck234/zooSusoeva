@@ -406,6 +406,7 @@ input[type=checkbox]:checked {
 }
 
 .button__dark-hero {
+  min-width: 312px;
   border-radius: 0;
   padding: 20px 60px;
 }
@@ -430,9 +431,9 @@ input[type=checkbox]:checked {
 }
 
 .button__light {
-  background: transparent;
+  background: #FFFFFF;
   color: #000203;
-  border: 3px solid #FFC533;
+  border: 2px solid #FFC533;
   font-weight: 700;
   line-height: 21.79px;
 }
@@ -441,8 +442,13 @@ input[type=checkbox]:checked {
 }
 
 .button__light-reviews {
-  flex-shrink: 0;
-  padding: 19px 37px;
+  max-width: 254px;
+  min-width: 190px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-shrink: 1;
+  padding: 20px 0;
 }
 
 .button__light-faq {
@@ -470,17 +476,32 @@ input[type=checkbox]:checked {
   stroke: #000203;
 }
 
+@media (max-width: 480px) {
+  .button__light-reviews {
+    max-width: 190px;
+    min-width: auto;
+  }
+}
+@media (max-width: 420px) {
+  .button__light-reviews {
+    max-width: 254px;
+    width: 100%;
+  }
+}
 @media (max-width: 360px) {
   .button__dark-hero {
     padding: 20px 30px;
     align-self: center;
+  }
+  .button__light-reviews {
+    border-width: 1px;
   }
 }
 .hero {
   padding-top: 60px;
   display: flex;
   position: relative;
-  margin-bottom: 116px;
+  margin-bottom: 120px;
   background-image: url(../../img/dog-hero-right.png);
   background-repeat: no-repeat;
   background-size: 35%;
@@ -495,8 +516,7 @@ input[type=checkbox]:checked {
   width: 392px;
   position: absolute;
   bottom: 0;
-  left: -340px;
-  z-index: -1;
+  left: -350px;
 }
 
 .hero__pic {
@@ -539,18 +559,14 @@ input[type=checkbox]:checked {
 }
 
 .hero__reviews {
+  width: 92%;
   position: relative;
   display: flex;
   align-items: center;
-  width: 90%;
+  gap: 30px;
+  justify-content: flex-start;
 }
 
-@media (max-width: 1172px) {
-  .hero__reviews {
-    width: 100%;
-  }
-}
-/*Более изящного способа для позиционирования декора пока не нашла, в поисках*/
 /*.hero::before*/
 @media (max-width: 1710px) {
   .hero::before {
@@ -584,9 +600,38 @@ input[type=checkbox]:checked {
   .hero__text {
     margin-bottom: 10px;
   }
+  .hero__reviews {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    gap: 20px;
+  }
+  .hero__img-left {
+    max-width: 218px;
+    width: 100%;
+    left: -50px;
+    z-index: -1;
+  }
+}
+@media (max-width: 900px) {
+  .hero__img-left {
+    right: 5%;
+    top: -10%;
+    width: 128px;
+    left: auto;
+  }
+}
+@media (max-width: 700px) {
+  .hero__reviews {
+    justify-content: flex-start;
+  }
+  .hero__img-left {
+    left: 62%;
+  }
 }
 @media (max-width: 480px) {
   .hero {
+    margin-bottom: 60px;
     background-image: none;
     padding-top: 30px;
   }
@@ -610,6 +655,21 @@ input[type=checkbox]:checked {
   .hero__img-right .hero__pic {
     max-width: 440px;
     width: 100%;
+  }
+  .hero__reviews {
+    justify-content: space-between;
+  }
+}
+@media (max-width: 420px) {
+  .hero__reviews {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 137px;
+  }
+  .hero__img-left {
+    top: -97px;
+    left: auto;
+    right: auto;
   }
 }
 @media (max-width: 360px) {
@@ -752,33 +812,87 @@ input[type=checkbox]:checked {
 
 .review__text {
   font-size: 12px;
+  font-weight: 400;
+  line-height: 130%;
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
 .reviews__list {
   display: flex;
-  align-items: stretch;
   justify-content: flex-start;
 }
 
 .reviews__item {
-  width: 32.7%;
+  flex-basis: 289px;
+  min-width: 233px;
+  flex-shrink: 1;
   min-height: 230px;
-  border-left: 3px solid #FFB700;
-  border-top: 3px solid #FFB700;
-  border-bottom: 3px solid #FFB700;
+  border-left: 2px solid #FFB700;
+  border-top: 2px solid #FFB700;
+  border-bottom: 2px solid #FFB700;
+  background: #FFFFFF;
 }
 .reviews__item:first-child {
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
 }
 .reviews__item:last-child {
-  border-right: 3px solid #FFB700;
+  border-right: 2px solid #FFB700;
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
 }
 
+@media (max-width: 1080px) {
+  .reviews__list {
+    justify-content: flex-end;
+  }
+  .reviews__item:last-child {
+    display: none;
+  }
+  .reviews__item:nth-child(2) {
+    border-right: 2px solid #FFB700;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
+}
+@media (max-width: 700px) {
+  .reviews__list {
+    justify-content: flex-start;
+    max-width: 289px;
+  }
+  .reviews__item {
+    min-width: auto;
+  }
+  .reviews__item:nth-child(2) {
+    display: none;
+  }
+  .reviews__item:first-child {
+    border-right: 2px solid #FFB700;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
+}
+@media (max-width: 480px) {
+  .reviews__list {
+    justify-content: flex-start;
+    flex-basis: 230px;
+  }
+  .reviews__item {
+    min-width: auto;
+  }
+}
+@media (max-width: 360px) {
+  .reviews__item {
+    border-width: 1px;
+  }
+  .reviews__item:first-child {
+    border-width: 1px;
+  }
+  .review__text {
+    font-size: 14px;
+  }
+}
 .title {
   font-size: 40px;
   font-weight: 700;

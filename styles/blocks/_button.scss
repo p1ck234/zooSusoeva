@@ -17,6 +17,7 @@
 }
 
 .button__dark-hero {
+  min-width: 312px;
   border-radius: 0;
   padding: 20px 60px;
 }
@@ -41,9 +42,9 @@
 }
 
 .button__light {
-  background: transparent;
+  background: $white;
   color: $black;
-  border: 3px solid $yellow;
+  border: 2px solid $yellow;
   font-weight: 700;
   line-height: 21.79px;
 
@@ -62,11 +63,13 @@
 }
 
 .button__light-reviews {
-  flex-shrink: 0;
-  // width: 191px;
-  // height: 80px;
-  padding: 19px 37px;
-  // margin-right: 20px;
+  max-width: 254px;
+  min-width: 190px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-shrink: 1;
+  padding: 20px 0;
 }
 
 .button__light-faq {
@@ -95,9 +98,30 @@
   }
 }
 
+
+@media (max-width : 480px) {
+  
+  .button__light-reviews {
+    max-width: 190px;
+    min-width: auto;
+  }
+}
+
+@media (max-width : 420px) {
+  
+  .button__light-reviews {
+    max-width: 254px;
+    width: 100%;
+  }
+}
+
 @media (max-width: 360px) {
   .button__dark-hero {
     padding: 20px 30px;
     align-self: center;
+  }
+
+  .button__light-reviews { 
+    border-width: 1px;
   }
 }
