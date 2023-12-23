@@ -38,7 +38,12 @@ ul li {
   list-style: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: normal;
   margin: 0;
 }
@@ -101,10 +106,30 @@ input[type=checkbox]:checked {
   background-image: url("./img/icons/anon.png");
 }
 
+@media (max-width: 1080px) {
+  .container {
+    max-width: 1000px;
+  }
+}
+@media (max-width: 480px) {
+  .container {
+    max-width: 440px;
+  }
+}
+@media (max-width: 360px) {
+  .container {
+    max-width: 320px;
+  }
+  body {
+    font-size: 16px;
+  }
+}
 .header {
+  position: relative;
   display: flex;
   padding-top: 15px;
   margin-bottom: 60px;
+  z-index: 10;
 }
 
 .header__container {
@@ -115,6 +140,50 @@ input[type=checkbox]:checked {
   padding-bottom: 12px;
 }
 
+.header__burger {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 260px;
+}
+
+.header__social {
+  display: none;
+  align-items: center;
+  gap: 30px;
+}
+.header__social-text {
+  margin-top: 60px;
+  margin-bottom: 11px;
+  font-weight: 600;
+  color: #000203;
+  line-height: 170%;
+}
+
+@media (max-width: 1080px) {
+  .header__menu {
+    display: none;
+  }
+  .header__social {
+    display: flex;
+    margin-right: 30px;
+    z-index: 2;
+  }
+}
+@media (max-width: 480px) {
+  .header {
+    padding-top: 24px;
+  }
+  .header__container {
+    padding-bottom: 24px;
+  }
+  .header__burger {
+    justify-content: flex-end;
+    gap: 30px;
+  }
+  .header__social {
+    display: none;
+  }
+}
 .logo {
   flex-shrink: 0;
   margin-right: 12px;
@@ -125,6 +194,12 @@ input[type=checkbox]:checked {
   height: 83px;
 }
 
+@media (max-width: 480px) {
+  .logo__img {
+    height: 60px;
+    width: 156px;
+  }
+}
 .menu__list {
   display: flex;
   align-items: center;
@@ -133,16 +208,15 @@ input[type=checkbox]:checked {
   white-space: nowrap;
   font-weight: 600;
   color: #000203;
+  gap: 32px;
 }
 
-.menu__item {
-  margin-right: 32px;
-}
 .menu__item:last-child {
-  margin-right: 0;
+  display: none;
 }
 
-.menu__link:hover, .menu__link-nav:hover {
+.menu__link:hover,
+.menu__link-nav:hover {
   color: #FFB700;
 }
 
@@ -155,8 +229,8 @@ input[type=checkbox]:checked {
 .cart__img {
   -o-object-fit: cover;
      object-fit: cover;
-  width: 42px;
-  height: 47px;
+  width: 32px;
+  height: 35px;
   fill: #FFFFFF;
   stroke: #000203;
 }
@@ -165,6 +239,111 @@ input[type=checkbox]:checked {
   transition: 0.3s all;
 }
 
+.close__img {
+  position: absolute;
+  top: 23px;
+  right: 23px;
+  width: 58px;
+  height: 58px;
+  stroke: #000203;
+  transition: stroke 0.3s ease;
+}
+.close__img:hover {
+  cursor: pointer;
+  stroke: #FFB700;
+}
+
+.burger__icon {
+  display: none;
+  stroke: #000203;
+  width: 44px;
+  height: 40px;
+  transition: stroke 0.3s ease;
+}
+.burger__icon:hover {
+  stroke: #FFB700;
+  cursor: pointer;
+}
+
+.burger__nav {
+  display: none;
+  position: absolute;
+  top: -15px;
+  right: -150%;
+  margin-right: -2.5%;
+  padding: 104px 78px;
+  width: 100%;
+  max-width: 413px;
+  min-height: 657px;
+  border: 1px solid #FFB700;
+  background: #FFFFFF;
+  transition: right 0.5s linear;
+  z-index: 10;
+}
+.burger__nav::after {
+  content: "";
+  display: block;
+  width: 182px;
+  height: 192px;
+  background-image: url(../../img/burger_dog.png);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+.burger__nav .menu__list {
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+}
+.burger__nav .menu__item:last-child {
+  display: block;
+}
+.burger__nav .menu__item:last-child .menu__link-nav {
+  display: flex;
+  align-items: center;
+}
+.burger__nav .menu__item:last-child:hover .cart__img {
+  stroke: #FFB700;
+  transition: 0.3s all;
+}
+.burger__nav .menu__item:last-child .cart__img {
+  margin-left: 16px;
+  width: 19px;
+  height: 21px;
+}
+.burger__nav .social__img {
+  width: 33.962px;
+  height: 37.358px;
+}
+
+@media (max-width: 1080px) {
+  .burger__icon {
+    display: block;
+  }
+  .burger__nav {
+    display: flex;
+    flex-direction: column;
+  }
+  .burger__nav .header__social {
+    display: flex;
+  }
+  .close__img {
+    display: block;
+  }
+}
+@media (max-width: 480px) {
+  .burger__nav {
+    top: -24px;
+    margin-right: -2.5%;
+  }
+}
+@media (max-width: 360px) {
+  .burger__nav {
+    width: 100vw;
+    margin-right: -20px;
+  }
+}
 .breadcrumbs {
   margin-bottom: 30px;
 }
@@ -1448,6 +1627,11 @@ svg {
 .social__img {
   width: 25px;
   height: 25px;
+}
+
+.social__link {
+  display: flex;
+  align-items: center;
 }
 
 .basket {

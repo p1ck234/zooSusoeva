@@ -23,7 +23,8 @@ body {
   border: 0;
 }
 
-:root { //*
+:root {
+  //*
   --index: calc(1vw + 1vh);
 }
 
@@ -33,10 +34,15 @@ ul {
 }
 
 ul li {
-  list-style: none; 
+  list-style: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: normal;
   margin: 0;
 }
@@ -97,4 +103,27 @@ table {
 
 input[type=checkbox]:checked {
   background-image: url('./img/icons/anon.png');
+}
+
+@media (max-width: 1080px) {
+  .container {
+    max-width: $containerWidthTablet;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .container {
+    max-width: $containerWidthMobileBig;
+  }
+}
+
+@media (max-width: 360px) {
+  .container {
+    max-width: $containerWidthMobile;
+  }
+
+  body {
+    font-size: $baseFontSizeMobile;
+  }
 }
