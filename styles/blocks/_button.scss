@@ -1,9 +1,10 @@
 .button {
   display: inline-flex;
+  justify-content: center;
   align-items: center;
   font-weight: 800;
   font-size: 16px;
-  border-radius: 3px;
+  border-radius: 2px;
 }
 
 .button__dark {
@@ -18,7 +19,6 @@
 
 .button__dark-hero {
   min-width: 312px;
-  border-radius: 0;
   padding: 20px 60px;
 }
 
@@ -118,6 +118,7 @@
 @media (max-width: 360px) {
   .button__dark-hero {
     padding: 20px 30px;
+    min-width: 254px;
     align-self: center;
   }
 
