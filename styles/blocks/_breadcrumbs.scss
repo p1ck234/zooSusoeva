@@ -1,8 +1,9 @@
 .breadcrumbs {
+  margin-top: 60px;
   margin-bottom: 30px;
 }
 
-.breadcrumbs__card{
+.breadcrumbs__card {
   margin-bottom: 59px;
 }
 
@@ -20,7 +21,7 @@
 
   &:last-child {
     margin-right: 0;
-    
+
     &::after {
       display: none;
     }
@@ -42,5 +43,26 @@
   &::after {
     content: "";
     margin-left: 11px;
+  }
+}
+
+@media (max-width: 480px) {
+  .breadcrumbs {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  .breadcrumbs__item {
+    margin-right: 9px;
+
+    &::after {
+      margin-left: 11px;
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .breadcrumbs__item {
+    font-size: 10px;
   }
 }
