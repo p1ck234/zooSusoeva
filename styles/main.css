@@ -1838,6 +1838,7 @@ svg {
 .product__pic {
   -o-object-fit: cover;
      object-fit: cover;
+  width: 100%;
 }
 
 .product__info {
