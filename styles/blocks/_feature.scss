@@ -1,7 +1,9 @@
 .feature {
   display: flex;
   flex-direction: column;
+  min-width: 290px;
 }
+
 
 .feature__header {
   display: flex;
@@ -33,4 +35,23 @@
   text-align: center;
   color: $grey;
   max-width: 290px;
+}
+
+@media (max-width: 480px) {
+
+  .feature__content-text {
+    font-size: 20px;
+  }
+
+}
+
+@media (max-width: 360px) {
+
+  .feature__header-text {
+    font-size: 54px;
+  }
+  .feature__content-text {
+    font-size: 16px;
+  }
+
 }

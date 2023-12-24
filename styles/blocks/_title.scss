@@ -3,10 +3,37 @@
   font-weight: 700;
   color: $black;
   margin-bottom: 57px;
+  line-height: 110%;
 
 
 }
 
 .title__faq {
   margin-bottom: 52px;
+}
+
+@media (max-width: 1080px) {
+  .title__faq {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .title {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+
+}
+
+@media (max-width: 360px) {
+  .title {
+    margin-bottom: 20px;
+  }
+
+
+  .title__faq {
+    margin-bottom: 40px;
+  }
 }
