@@ -47,18 +47,15 @@
   border: 2px solid $yellow;
   font-weight: 700;
   line-height: 21.79px;
-
-  // &::after {
-  //   content: "";
-  //   display: inline-block;
-  //   background: url(../../img/icons/arrow-black.svg) no-repeat;
-  //   width: 15px;
-  //   height: 15px;
-  //   margin-left: 10px;
-  // }
-
   &:hover {
     border-color: $orange;
+    color: $orange;
+
+    .button__icon {
+      &--dark {
+        stroke: $orange;
+      }
+    }
   }
 }
 
@@ -92,6 +89,7 @@
   stroke: $white;
   width: 15px;
   height: 15px;
+  transition: 0.3s all;
 
   &--dark {
     stroke: $black;

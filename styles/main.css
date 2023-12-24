@@ -439,6 +439,10 @@ input[type=checkbox]:checked {
 }
 .button__light:hover {
   border-color: #FFB700;
+  color: #FFB700;
+}
+.button__light:hover .button__icon--dark {
+  stroke: #FFB700;
 }
 
 .button__light-reviews {
@@ -471,6 +475,7 @@ input[type=checkbox]:checked {
   stroke: #FFFFFF;
   width: 15px;
   height: 15px;
+  transition: 0.3s all;
 }
 .button__icon--dark {
   stroke: #000203;
