@@ -10,6 +10,7 @@
 .breadcrumbs__list {
   display: flex;
   align-items: center;
+  gap: 10px;
 }
 
 .breadcrumbs__item {
@@ -17,7 +18,6 @@
   align-items: center;
   color: $grey;
   font-size: 12px;
-  margin-right: 18px;
 
   &:last-child {
     margin-right: 0;
@@ -38,12 +38,14 @@
 }
 
 .breadcrumbs__item-card {
-  margin-right: 6px;
-
   &::after {
     content: "";
     margin-left: 11px;
   }
+}
+
+.breadcrumbs__link:hover {
+  color: $orange;
 }
 
 @media (max-width: 480px) {
@@ -52,8 +54,12 @@
     margin-bottom: 20px;
   }
 
+  .breadcrumbs__list {
+    flex-wrap: wrap;
+  }
+
   .breadcrumbs__item {
-    margin-right: 9px;
+    min-width: 48px;
 
     &::after {
       margin-left: 11px;

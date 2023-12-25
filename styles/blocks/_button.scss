@@ -1,3 +1,10 @@
+.button__box {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+
 .button {
   display: inline-flex;
   justify-content: center;
@@ -47,6 +54,7 @@
   border: 2px solid $yellow;
   font-weight: 700;
   line-height: 21.79px;
+
   &:hover {
     border-color: $orange;
     color: $orange;
@@ -96,12 +104,28 @@
   }
 }
 
+@media (max-width: 800px) {
+  .button__box {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 767px) {
+  .button__box {
+    flex-direction: row;
+  }
+}
+
 
 @media (max-width : 480px) {
 
   .button__light-reviews {
     max-width: 190px;
     min-width: auto;
+  }
+
+  .button__light-prev {
+    padding: 20px 30px;
   }
 }
 
@@ -114,6 +138,11 @@
 }
 
 @media (max-width: 360px) {
+
+  .button__box {
+    width: 100%;
+    flex-wrap: wrap;
+  }
   .button__dark-hero {
     padding: 20px 30px;
     min-width: 254px;
@@ -127,4 +156,6 @@
   .button__dark-offer {
     max-width: 253px;
   }
+
+
 }

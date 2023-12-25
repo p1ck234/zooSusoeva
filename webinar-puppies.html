@@ -1,39 +1,59 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Вебинар: «Этология для чайников» - Зоопсихолог Сысоева Ольга</title>
-    <link rel="stylesheet" href="./styles/main.css" />
-  </head>
 
-  <body>
-    <div class="wrapper">
-      <main class="maincontent">
-        <header class="header">
-          <div class="container header__container">
-            <a href="./index.html" class="logo">
-              <img src="./img/logo.png" alt="Логотип" class="logo__img" />
-            </a>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Вебинар: «Этология для чайников» - Зоопсихолог Сысоева Ольга</title>
+  <link rel="stylesheet" href="./styles/main.css" />
+</head>
 
-            <nav class="menu header__menu">
-              <ul class="menu__list">
-                <li class="menu__item">
-                  <a href="./index.html" class="menu__link-nav">Главная</a>
-                </li>
-                <li class="menu__item">
-                  <a href="./webinars.html" class="menu__link-nav">Магазин</a>
-                </li>
-                <li class="menu__item">
-                  <a href="./reviews.html" class="menu__link-nav">Отзывы</a>
-                </li>
-                <li class="menu__item">
-                  <a href="./faqs.html" class="menu__link-nav">Вопросы</a>
-                </li>
-              </ul>
-            </nav>
-
+<body>
+  <div class="wrapper">
+    <main class="maincontent">
+      <header class="header">
+        <div class="container header__container">
+          <a href="./index.html" class="logo">
+            <img src="./img/logo.png" alt="Логотип" class="logo__img" />
+          </a>
+          <nav class="menu header__menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="./index.html" class="menu__link-nav">Главная</a>
+              </li>
+              <li class="menu__item">
+                <a href="./webinars.html" class="menu__link-nav">Магазин</a>
+              </li>
+              <li class="menu__item">
+                <a href="./reviews.html" class="menu__link-nav">Отзывы</a>
+              </li>
+              <li class="menu__item">
+                <a href="./faqs.html" class="menu__link-nav">Вопросы</a>
+              </li>
+              <li class="menu__item">
+                <a href="./basket.html" class="menu__link-nav">Корзина
+                  <svg class="cart__img">
+                    <use xlink:href="./img/sprite.svg#cart"></use>
+                  </svg>
+                </a>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__burger">
+            <div class="header__social">
+              <a href="#" class="social__link">
+                <svg class="social__img">
+                  <use xlink:href="./img/sprite.svg#tg"></use>
+                </svg>
+              </a>
+              <a href="#" class="social__link">
+                <svg class="social__img">
+                  <use xlink:href="./img/sprite.svg#vk"></use>
+                </svg>
+              </a>
+            </div>
             <div class="cart__cover">
               <a href="./basket.html" class="cart header__cart">
                 <svg class="cart__img">
@@ -41,71 +61,76 @@
                 </svg>
               </a>
             </div>
-          </div>
-        </header>
-
-        <nav class="breadcrumbs breadcrumbs__card">
-          <div class="container breadcrumbs__container">
-            <ul class="breadcrumbs__list breadcrumbs__list-card">
-              <li class="breadcrumbs__item breadcrumbs__item-card">
-                <a href="./index.html" class="breadcrumbs__link">Главная</a>
-              </li>
-
-              <li class="breadcrumbs__item breadcrumbs__item-card">
-                <a href="./webinars.html" class="breadcrumbs__link">Магазин</a>
-              </li>
-
-              <li class="breadcrumbs__item breadcrumbs__item-card">
-                <a href="./webinars.html" class="breadcrumbs__link">Вебинары</a>
-              </li>
-
-              <li class="breadcrumbs__item breadcrumbs__item-card">
-                «Щенки»
-              </li>
-            </ul>
-          </div>
-        </nav>
-
-        <section class="card-ethology card">
-          <div class="container card__container">
-            <div class="card__content">
-              <div class="card__cover">
-                <img
-                  src="./img/webinar-puppies.jpg"
-                  class="card__img"
-                  alt="ethology"
-                />
+            <svg class="burger__icon">
+              <use xlink:href="./img/sprite.svg#burger"></use>
+            </svg>
+            <nav class="burger__nav" id="headerBurger">
+              <div class="close" id="burgerClose">
+                <svg class="close__img">
+                  <use xlink:href="./img/sprite.svg#close"></use>
+                </svg>
               </div>
+            </nav>
+          </div>
+        </div>
+      </header>
 
-              <div class="card__desc">
-                <article class="card__text">
-                  <h1 class="card__title">«Щенки»</h1>
-                  <p>
-                    Этот вебинар нужно смотреть всей семьёй. Все мелочи, все нюансы я там дала. 
-                  </p>
+      <nav class="breadcrumbs breadcrumbs__card">
+        <div class="container breadcrumbs__container">
+          <ul class="breadcrumbs__list breadcrumbs__list-card">
+            <li class="breadcrumbs__item breadcrumbs__item-card">
+              <a href="./index.html" class="breadcrumbs__link">Главная</a>
+            </li>
 
-                  <p>
-                    Актуально, не только когда уже купили, а даже когда только подумали завести собаку.  
-                  </p>
-                  <p>
-                    Вас уже никто не собьёт с пути дурацкими советами.                   </p>
-                  <p>
-                    Вы больше не будете искать рекомендации в интернете.                  </p>
-                </article>
+            <li class="breadcrumbs__item breadcrumbs__item-card">
+              <a href="./webinars.html" class="breadcrumbs__link">Магазин</a>
+            </li>
 
-                <div class="card__name">*Вебинар в записи</div>
+            <li class="breadcrumbs__item breadcrumbs__item-card">
+              <a href="./webinars.html" class="breadcrumbs__link">Вебинары</a>
+            </li>
 
-                <div class="card__purchase">
-                  <div class="card__price">1100 ₽</div>
+            <li class="breadcrumbs__item breadcrumbs__item-card">
+              «Щенки»
+            </li>
+          </ul>
+        </div>
+      </nav>
 
+      <section class="card-ethology card">
+        <div class="container card__container">
+          <div class="card__content">
+            <div class="card__cover">
+              <img src="./img/webinar-puppies.jpg" class="card__img" alt="ethology" />
+            </div>
+
+            <div class="card__desc">
+              <article class="card__text">
+                <h1 class="card__title">«Щенки»</h1>
+                <p>
+                  Этот вебинар нужно смотреть всей семьёй. Все мелочи, все нюансы я там дала.
+                </p>
+
+                <p>
+                  Актуально, не только когда уже купили, а даже когда только подумали завести собаку.
+                </p>
+                <p>
+                  Вас уже никто не собьёт с пути дурацкими советами. </p>
+                <p>
+                  Вы больше не будете искать рекомендации в интернете. </p>
+              </article>
+
+              <div class="card__name">*Вебинар в записи</div>
+
+              <div class="card__purchase">
+                <div class="card__price-box">
+                  <span class="card__price">1100 ₽</span>
+                </div>
+                <div class="button__box">
                   <a href="#" class="card__button">В корзину</a>
 
-                  <a
-                    href="./webinars.html"
-                    class="button button__light button__light-prev"
-                  >
+                  <a href="./webinars.html" class="button button__light button__light-prev">
                     <span class="button__text">Назад</span>
-
                     <svg class="button__icon button__icon--dark">
                       <use xlink:href="./img/sprite.svg#arrow"></use>
                     </svg>
@@ -114,81 +139,69 @@
               </div>
             </div>
           </div>
-        </section>
-      </main>
+        </div>
+      </section>
+    </main>
 
-      <footer class="footer">
-        <div class="container footer__container">
-          <div class="footer__contacts">
-            <a href="./index.html" class="footer__logo">
-              <img
-                src="./img/logo-footer.png"
-                alt="Логотип"
-                class="footer__logo-img"
-              />
-            </a>
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__contacts">
+          <a href="./index.html" class="footer__logo">
+            <img src="./img/logo-footer.png" alt="Логотип" class="footer__logo-img" />
+          </a>
 
-            <nav class="menu footer__menu">
-              <ul class="footer__menu-list">
-                <li class="footer__menu-item">
-                  <a href="./webinars.html" class="footer__menu-link"
-                    >Вебинары</a
-                  >
-                </li>
-                <li class="footer__menu-item">
-                  <a href="./books.html" class="footer__menu-link">Книги</a>
-                </li>
-                <li class="footer__menu-item">
-                  <a href="./cheat-sheets.html" class="footer__menu-link"
-                    >Шпаргалки</a
-                  >
-                </li>
-                <li class="footer__menu-item">
-                  <a href="./webinar-kits.html" class="footer__menu-link"
-                    >Комплект вебинаров</a
-                  >
-                </li>
-              </ul>
-            </nav>
+          <nav class="menu footer__menu">
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <a href="./webinars.html" class="footer__menu-link">Вебинары</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="./books.html" class="footer__menu-link">Книги</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="./cheat-sheets.html" class="footer__menu-link">Шпаргалки</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="./webinar-kits.html" class="footer__menu-link">Комплект вебинаров</a>
+              </li>
+            </ul>
+          </nav>
 
-            <div class="footer__connect">
-              <div class="footer__text">Связаться со мной:</div>
-              <ul class="footer__socials social">
-                <li class="social__item">
-                  <a href="#" class="social__link">
-                    <svg class="social__img">
-                      <use xlink:href="./img/sprite.svg#tg"></use>
-                    </svg>
-                  </a>
-                </li>
+          <div class="footer__connect">
+            <div class="footer__text">Связаться со мной:</div>
+            <ul class="footer__socials social">
+              <li class="social__item">
+                <a href="#" class="social__link">
+                  <svg class="social__img social__img--footer">
+                    <use xlink:href="./img/sprite.svg#tg"></use>
+                  </svg>
+                </a>
+              </li>
 
-                <li class="social__item">
-                  <a href="#" class="social__link">
-                    <svg class="social__img">
-                      <use xlink:href="./img/sprite.svg#vk"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </div>
+              <li class="social__item">
+                <a href="#" class="social__link">
+                  <svg class="social__img social__img--footer">
+                    <use xlink:href="./img/sprite.svg#vk"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
           </div>
-
           <ul class="footer__politics">
             <li class="footer__politic">
-              <a href="#" class="footer__politic-link"
-                >Политика конфиденциальности</a
-              >
+              <a href="#" class="footer__politic-link">Политика конфиденциальности</a>
             </li>
             <li class="footer__politic">
-              <a href="#" class="footer__politic-link"
-                >Пользовательское соглашение</a
-              >
+              <a href="#" class="footer__politic-link">Пользовательское соглашение</a>
             </li>
           </ul>
-
-          <div class="footer__copyright">©Зоопсихолог Сысоева</div>
         </div>
-      </footer>
-    </div>
-  </body>
+        <div class="footer__copyright">©Зоопсихолог Сысоева</div>
+      </div>
+    </footer>
+  </div>
+  <script src="./scripts/burgerMenu.js"></script>
+  <script src="./scripts/menu.js"></script>
+</body>
+
 </html>
