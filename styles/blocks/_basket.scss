@@ -1,3 +1,6 @@
+.bin {
+  margin-top: 60px;
+}
 .basket {
   display: flex;
 
@@ -213,8 +216,17 @@
   .basket__item_price {
     margin-right: 276px;
   }
+  .bin {
+    margin-top: 30px;
+  }
 }
-@media (max-width: 885px) {
+@media (max-width: 1004px) and (min-width: 927px) {
+  .basket__price {
+    margin-left: 16px !important;
+  }
+}
+
+@media (max-width: 1002px) {
   .basket__products {
     justify-content: center;
   }
@@ -255,6 +267,9 @@
   }
   .basket__item_svg {
     height: 25px;
+  }
+  .bin {
+    margin-top: 30px;
   }
 }
 @media (max-width: 454px) {
@@ -297,5 +312,8 @@
   }
   .basket__list_img {
     margin-right: 30px;
+  }
+  .bin {
+    margin-top: 30px;
   }
 }
