@@ -2,8 +2,9 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 576px;
+  min-height: 592px;
 }
+
 
 .product__img {
   margin-bottom: 30px;
@@ -68,42 +69,10 @@
   justify-content: space-between;
 }
 
-.product__price-discount {
+.product__price-box {
   position: relative;
-}
-
-.product__price-discount:before {
-  content: "1600 ₽";
-  display: block;
-  position: absolute;
-  font-size: 16px;
-  font-weight: 700;
-  color: $grey;
-  bottom: 51px;
-  left: 0;
-  width: 51px;
-  height: 21px;
-}
-
-.product__price-discount:after {
-  content: "";
-  font-family: 'Open Sans', Helvetica, sans-serif;
-  border-bottom: 2px solid #FFB700;
-  position: absolute;
-  bottom: 181%;
-  left: 3%;
-  width: 59%;
-}
-
-.product__price-discount-wk:before {
-  content: "4350 ₽";
-}
-
-.product__price-discount-wk:after {
-  content: "";
-  bottom: 181%;
-  left: 1%;
-  width: 48%;
+  display: flex;
+  gap: 20px;
 }
 
 .product__price {
@@ -111,6 +80,28 @@
   font-weight: 700;
   line-height: 31.2px;
   color: $black;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.product__price-discount {
+  position: absolute;
+  top: -40px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 700;
+  color: $grey;
+}
+
+.product__price-discount::before {
+  content: "";
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  border-bottom: 2px solid #FFB700;
+  position: absolute;
+  width: 100%;
 }
 
 .product__button-light {
@@ -139,6 +130,12 @@
     margin-bottom: 20px;
   }
 
+  .product__price-discount {
+    position: relative;
+    top: auto;
+    font-size: 18px;
+  }
+
   .product__button-light {
     border-width: 1px;
   }
@@ -165,6 +162,10 @@
   .product__price {
     font-size: 20px;
   }
+
+  .product__price-discount {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 360px) {
@@ -189,5 +190,9 @@
   .product__price {
     font-size: 14px;
     font-weight: 700;
+  }
+
+  .product__price-discount {
+    font-size: 12px;
   }
 }
