@@ -2546,6 +2546,7 @@ svg {
   .basket__item_price {
     margin-right: 56px;
     margin-top: 15px;
+    font-size: 16px;
   }
   .basket__price {
     width: 440px;
@@ -2557,6 +2558,51 @@ svg {
   }
   .basket__item_desctiption {
     font-size: 14px;
+  }
+  .basket__list_img {
+    margin-right: 30px;
+  }
+  .basket__item_svg {
+    height: 25px;
+  }
+}
+@media (max-width: 454px) {
+  .basket__products {
+    justify-content: center;
+  }
+  .main__title {
+    margin-top: 15px;
+  }
+  .basket__list_head {
+    width: 320px;
+  }
+  .basket__item {
+    width: 320px;
+  }
+  .basket__item_block {
+    width: 132px;
+  }
+  .basket__products {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .basket__item_price {
+    margin-right: 38px;
+    margin-top: 15px;
+  }
+  .basket__item_svg {
+    height: 25px;
+  }
+  .basket__price {
+    width: 320px;
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+  .basket__item_title {
+    font-size: 16px;
+  }
+  .basket__item_desctiption {
+    font-size: 10px;
   }
   .basket__list_img {
     margin-right: 30px;
