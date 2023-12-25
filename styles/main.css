@@ -2509,6 +2509,59 @@ svg {
   background: #FFB700;
 }
 
+@media (max-width: 1258px) {
+  .basket__list_head {
+    width: 660px;
+  }
+  .basket__item {
+    width: 660px;
+  }
+  .basket__item_block {
+    width: 382px;
+  }
+  .basket__item_price {
+    margin-right: 276px;
+  }
+}
+@media (max-width: 885px) {
+  .basket__products {
+    justify-content: center;
+  }
+  .main__title {
+    margin-top: 15px;
+  }
+  .basket__list_head {
+    width: 440px;
+  }
+  .basket__item {
+    width: 440px;
+  }
+  .basket__item_block {
+    width: 192px;
+  }
+  .basket__products {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .basket__item_price {
+    margin-right: 56px;
+    margin-top: 15px;
+  }
+  .basket__price {
+    width: 440px;
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+  .basket__item_title {
+    font-size: 16px;
+  }
+  .basket__item_desctiption {
+    font-size: 14px;
+  }
+  .basket__list_img {
+    margin-right: 30px;
+  }
+}
 .faqs__container {
   width: 95%;
   height: 100%;

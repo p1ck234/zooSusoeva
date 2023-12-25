@@ -16,7 +16,6 @@
             <a href="./index.html" class="logo">
               <img src="./img/logo.png" alt="Логотип" class="logo__img" />
             </a>
-
             <nav class="menu header__menu">
               <ul class="menu__list">
                 <li class="menu__item">
@@ -31,15 +30,46 @@
                 <li class="menu__item">
                   <a href="./faqs.html" class="menu__link-nav">Вопросы</a>
                 </li>
+                <li class="menu__item">
+                  <a href="./basket.html" class="menu__link-nav"
+                    >Корзина
+                    <svg class="cart__img">
+                      <use xlink:href="./img/sprite.svg#cart"></use>
+                    </svg>
+                  </a>
+                </li>
               </ul>
             </nav>
-
-            <div class="cart__cover">
-              <a href="#" class="cart header__cart">
-                <svg class="cart__img">
-                  <use xlink:href="./img/sprite.svg#cart"></use>
-                </svg>
-              </a>
+            <div class="header__burger">
+              <div class="header__social">
+                <a href="#" class="social__link">
+                  <svg class="social__img">
+                    <use xlink:href="./img/sprite.svg#tg"></use>
+                  </svg>
+                </a>
+                <a href="#" class="social__link">
+                  <svg class="social__img">
+                    <use xlink:href="./img/sprite.svg#vk"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="cart__cover">
+                <a href="./basket.html" class="cart header__cart">
+                  <svg class="cart__img">
+                    <use xlink:href="./img/sprite.svg#cart"></use>
+                  </svg>
+                </a>
+              </div>
+              <svg class="burger__icon">
+                <use xlink:href="./img/sprite.svg#burger"></use>
+              </svg>
+              <nav class="burger__nav" id="headerBurger">
+                <div class="close" id="burgerClose">
+                  <svg class="close__img">
+                    <use xlink:href="./img/sprite.svg#close"></use>
+                  </svg>
+                </div>
+              </nav>
             </div>
           </div>
         </header>
@@ -168,7 +198,7 @@
               <ul class="footer__socials social">
                 <li class="social__item">
                   <a href="#" class="social__link">
-                    <svg class="social__img">
+                    <svg class="social__img social__img--footer">
                       <use xlink:href="./img/sprite.svg#tg"></use>
                     </svg>
                   </a>
@@ -176,29 +206,28 @@
 
                 <li class="social__item">
                   <a href="#" class="social__link">
-                    <svg class="social__img">
+                    <svg class="social__img social__img--footer">
                       <use xlink:href="./img/sprite.svg#vk"></use>
                     </svg>
                   </a>
                 </li>
               </ul>
             </div>
+            <ul class="footer__politics">
+              <li class="footer__politic">
+                <a href="#" class="footer__politic-link"
+                  >Политика конфиденциальности</a
+                >
+              </li>
+              <li class="footer__politic">
+                <a href="#" class="footer__politic-link"
+                  >Пользовательское соглашение</a
+                >
+              </li>
+            </ul>
           </div>
 
-          <ul class="footer__politics">
-            <li class="footer__politic">
-              <a href="#" class="footer__politic-link"
-                >Политика конфиденциальности</a
-              >
-            </li>
-            <li class="footer__politic">
-              <a href="#" class="footer__politic-link"
-                >Пользовательское соглашение</a
-              >
-            </li>
-          </ul>
-
-          <div class="footer__copyright">©Зоопсихолог Сысоева</div>
+          <div class="footer__copyright">© Зоопсихолог Сысоева</div>
         </div>
       </footer>
     </div>
