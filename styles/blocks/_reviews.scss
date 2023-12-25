@@ -103,7 +103,7 @@
   margin: 0 auto;
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 1252px) {
   .reviews__items_container {
     column-count: 2;
     width: 818px;
@@ -120,12 +120,17 @@
   .reviews__items_container {
     column-count: 1;
     width: 380px;
+    height: 880px;
   }
   .reviews__items_name {
     font-size: 16px;
   }
   .reviews__items_text {
+    width: 350px;
     font-size: 16px;
+  }
+  .reviews__items_line {
+    width: 380px;
   }
   .reviews__container {
     align-items: center;
