@@ -749,10 +749,6 @@ input[type=checkbox]:checked {
     font-size: 32px;
   }
 }
-.maincontent {
-  margin-bottom: 0px;
-}
-
 .reviews__container {
   width: 95%;
   height: 100%;
@@ -845,7 +841,7 @@ input[type=checkbox]:checked {
   margin: 0 auto;
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 1252px) {
   .reviews__items_container {
     -moz-column-count: 2;
          column-count: 2;
@@ -863,12 +859,17 @@ input[type=checkbox]:checked {
     -moz-column-count: 1;
          column-count: 1;
     width: 380px;
+    height: 880px;
   }
   .reviews__items_name {
     font-size: 16px;
   }
   .reviews__items_text {
+    width: 350px;
     font-size: 16px;
+  }
+  .reviews__items_line {
+    width: 380px;
   }
   .reviews__container {
     align-items: center;
@@ -2576,6 +2577,10 @@ svg {
     height: 37.358px;
   }
 }
+.bin {
+  margin-top: 60px;
+}
+
 .basket {
   display: flex;
 }
@@ -2769,8 +2774,16 @@ svg {
   .basket__item_price {
     margin-right: 276px;
   }
+  .bin {
+    margin-top: 30px;
+  }
 }
-@media (max-width: 885px) {
+@media (max-width: 1004px) and (min-width: 927px) {
+  .basket__price {
+    margin-left: 16px !important;
+  }
+}
+@media (max-width: 1002px) {
   .basket__products {
     justify-content: center;
   }
@@ -2811,6 +2824,9 @@ svg {
   }
   .basket__item_svg {
     height: 25px;
+  }
+  .bin {
+    margin-top: 30px;
   }
 }
 @media (max-width: 454px) {
@@ -2853,6 +2869,9 @@ svg {
   }
   .basket__list_img {
     margin-right: 30px;
+  }
+  .bin {
+    margin-top: 30px;
   }
 }
 .faqs__container {
