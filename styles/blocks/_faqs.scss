@@ -1,78 +1,75 @@
 .faqs {
 
   &__container {
-      width: 95%;
-      height: 100%;
-      max-width: $containerWidth;
-      margin: 0 auto;
-      position: relative;
-      display: flex;
-        flex-direction: column;
+    width: 95%;
+    height: 100%;
+    max-width: $containerWidth;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
 
-    
+
     &_title {
       color: $black;
       font-family: Open Sans;
       font-size: 40px;
       font-style: normal;
       font-weight: 600;
-      line-height: 130%; /* 52px */
+      line-height: 130%;
+      /* 52px */
     }
 
     &_question {
-        width: 1216px;
-        margin-top: 60px;
-        position: relative;
+      margin-top: 60px;
+      position: relative;
 
-        &::after {
-          content: '';
-          position: absolute;
-          bottom: 0;
-          left: 0;
-          width: 100%;
-          height: 400px; 
-          background: linear-gradient(to top, white, transparent);
-        }
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 400px;
+        background: linear-gradient(to top, white, transparent);
+      }
 
-        &.no-gradient::after {
-          display: none; 
-        }
+      &.no-gradient::after {
+        display: none;
+      }
     }
 
-    &_items{
-        width: 1216px;
-        height: 100%;
 
+    &_items {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 60px;
     }
 
-    &_items{
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 60px;
-    }
-
-    &_quest{
-        width: 495px;
-        color: #282828;
-        font-feature-settings: 'clig' off, 'liga' off;
-        font-family: Open Sans;
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 120%; /* 28.8px */
+    &_quest {
+      min-width: 41%;
+      margin-right: 20px;
+      color: #282828;
+      font-feature-settings: 'clig' off, 'liga' off;
+      font-family: Open Sans;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 120%;
+      /* 28.8px */
 
     }
 
-    &_answer{
-        margin-top: 30px;
-        width: 701px;
-        color: #545454;
-        font-feature-settings: 'clig' off, 'liga' off;
-        font-family: Open Sans;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 130%; /* 23.4px */
+    &_answer {
+      margin-top: 30px;
+      color: #545454;
+      font-feature-settings: 'clig' off, 'liga' off;
+      font-family: Open Sans;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 130%;
+      /* 23.4px */
 
     }
 
@@ -81,8 +78,60 @@
 }
 
 .button__light-faqs {
-    align-self: center;
-    padding: 17px 55px;
-    margin: 0 auto;
+  align-self: center;
+  padding: 17px 55px;
+  margin: 0 auto;
 }
 
+@media (max-width: 1080px) {
+  .faqs__container_title {
+    font-size: 32px;
+  }
+
+  .faqs__container_answer {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .faqs__container_items {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .faqs__container_quest {
+    margin-right: 0;
+  }
+}
+
+@media(max-width: 480px) {
+  .faqs__container_question {
+    margin-top: 30px;
+  }
+
+  .faqs__container_items {
+    margin-bottom: 40px;
+  }
+
+  .faqs__container_quest {
+    font-size: 20px;
+  }
+
+  .faqs__container_answer {
+    font-size: 16px;
+  }
+}
+
+@media(max-width: 360px) {
+  .faqs__container_title {
+    font-size: 24px;
+  }
+
+  .faqs__container_quest {
+    font-size: 16px;
+  }
+
+  .faqs__container_answer {
+    font-size: 14px;
+  }
+}
