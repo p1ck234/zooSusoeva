@@ -21,7 +21,7 @@ Menu.copyAppendElement(menuBurger, '.header__social');
 const menuBurgerIcon = document.querySelector('.burger__icon');
 
 menuBurgerIcon.addEventListener('click', function () {
-    menuBurger.style.right = '0';
+    menuBurger.style.right = '-2.5%';
 });
 
 /**Закрытие бургер меню */
