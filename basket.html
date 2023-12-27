@@ -79,7 +79,7 @@
 
       <section class="books store">
         <div class="container store__container">
-          <h1 class="main__title bin">Корзина</h1>
+          <h1 class="main__title bin">Корзина(<span class="basket__total-count">2</span>)</h1>
           <div class="basket__products basket">
             <ul class="basket__list">
               <li class="basket__list_head">
@@ -103,7 +103,9 @@
                   <h3 class="basket__item_title">«Этология для чайников»</h3>
                   <h3 class="basket__item_desctiption">*Вебинар в записи</h3>
                   <div class="basket__item_div">
-                    <h3 class="basket__item_price">1100 ₽</h3>
+                    <div class="basket__item_price-box">
+                      <span class="basket__item_price">1100 ₽</span>
+                    </div>
                     <svg class="basket__item_svg">
                       <use xlink:href="./img/sprite.svg#basket"></use>
                     </svg>
@@ -115,19 +117,60 @@
                   <input class="basket__list__checkinp" type="checkbox" id="select" />
                   <span class="basket__list_checkbox"></span>
                 </label>
-
                 <div class="basket__list_img">
-                  <img src="./img/basket3.png" />
+                  <img src="./img/basket1.png" />
                 </div>
                 <div class="basket__item_block">
-                  <h3 class="basket__item_title">
-                    «Цифровые шпаргалки от Сысоевой»
-                  </h3>
-                  <h3 class="basket__item_desctiption">
-                    «Цифровые шпаргалки от Сысоевой»
-                  </h3>
+                  <h3 class="basket__item_title">«Этология для чайников»</h3>
+                  <h3 class="basket__item_desctiption">*Вебинар в записи</h3>
                   <div class="basket__item_div">
-                    <h3 class="basket__item_price">1800 ₽</h3>
+                    <div class="basket__item_price-box">
+                      <span class="basket__item_price">1100 ₽</span>
+                    </div>
+                    <svg class="basket__item_svg">
+                      <use xlink:href="./img/sprite.svg#basket"></use>
+                    </svg>
+                  </div>
+                </div>
+              </li>
+              <li class="basket__item">
+                <label class="basket__list_check">
+                  <input class="basket__list__checkinp" type="checkbox" id="select" />
+                  <span class="basket__list_checkbox"></span>
+                </label>
+                <div class="basket__list_img">
+                  <img src="./img/basket1.png" />
+                </div>
+                <div class="basket__item_block">
+                  <h3 class="basket__item_title">«Этология для чайников»</h3>
+                  <h3 class="basket__item_desctiption">*Вебинар в записи</h3>
+                  <div class="basket__item_div">
+                    <div class="basket__item_price-box">
+                      <span class="basket__item_price-discount">4350 ₽</span>
+                      <span class="basket__item_price">1100 ₽</span>
+                    </div>
+                    <svg class="basket__item_svg">
+                      <use xlink:href="./img/sprite.svg#basket"></use>
+                    </svg>
+                  </div>
+                </div>
+              </li>
+              <li class="basket__item">
+                <label class="basket__list_check">
+                  <input class="basket__list__checkinp" type="checkbox" id="select" />
+                  <span class="basket__list_checkbox"></span>
+                </label>
+                <div class="basket__list_img">
+                  <img src="./img/basket1.png" />
+                </div>
+                <div class="basket__item_block">
+                  <h3 class="basket__item_title">«Этология для чайников»</h3>
+                  <h3 class="basket__item_desctiption">*Вебинар в записи</h3>
+                  <div class="basket__item_div">
+                    <div class="basket__item_price-box">
+                      <span class="basket__item_price-discount">4350 ₽</span>
+                      <span class="basket__item_price">1100 ₽</span>
+                    </div>
                     <svg class="basket__item_svg">
                       <use xlink:href="./img/sprite.svg#basket"></use>
                     </svg>
@@ -139,11 +182,9 @@
             <div class="basket__price">
               <div class="basket__price_end">
                 <h3 class="basket__price_text">Итого (2)</h3>
-                <div class="basket__price_money">2900</div>
+                <div class="basket__price_money">2900 ₽</div>
               </div>
-
-              <div class="basket__price_line"></div>
-              <button href="./order.html" class="basket__button">Оформить заказ</button>
+              <a href="./order.html" class="basket__button">Оформить заказ</a>
             </div>
           </div>
         </div>
@@ -196,15 +237,14 @@
           </div>
           <ul class="footer__politics">
             <li class="footer__politic">
-              <a href="#" class="footer__politic-link">Политика конфиденциальности</a>
+              <a href="./info.html" class="footer__politic-link">Политика конфиденциальности</a>
             </li>
             <li class="footer__politic">
-              <a href="#" class="footer__politic-link">Пользовательское соглашение</a>
+              <a href="./info.html" class="footer__politic-link">Пользовательское соглашение</a>
             </li>
           </ul>
         </div>
-
-        <div class="footer__copyright">© Зоопсихолог Сысоева</div>
+        <div class="footer__copyright">©Зоопсихолог Сысоева</div>
       </div>
     </footer>
   </div>
