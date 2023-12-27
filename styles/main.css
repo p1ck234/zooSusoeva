@@ -3277,7 +3277,6 @@ li > .faq__answer-text {
 }
 .faqs__container_items {
   display: flex;
-  justify-content: space-between;
   margin-bottom: 60px;
 }
 .faqs__container_quest {
