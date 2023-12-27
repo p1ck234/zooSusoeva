@@ -67,6 +67,15 @@
             .menu__link-nav {
                 display: flex;
                 align-items: center;
+                justify-content: center;
+                position: relative;
+
+                & .cart__cover-count {
+                    width: 12px;
+                    height: 12px;
+                    border-width: 1.5px;
+                    font-size: 8px;
+                }
             }
 
             &:hover {
