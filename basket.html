@@ -1,238 +1,256 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Корзина - Зоопсихолог Сысоева Ольга</title>
-    <link rel="stylesheet" href="./styles/main.css" />
-  </head>
 
-  <body>
-    <div class="wrapper">
-      <main class="maincontent">
-        <header class="header">
-          <div class="container header__container">
-            <a href="./index.html" class="logo">
-              <img src="./img/logo.png" alt="Логотип" class="logo__img" />
-            </a>
-            <nav class="menu header__menu">
-              <ul class="menu__list">
-                <li class="menu__item">
-                  <a href="./index.html" class="menu__link-nav">Главная</a>
-                </li>
-                <li class="menu__item">
-                  <a href="./webinars.html" class="menu__link-nav">Магазин</a>
-                </li>
-                <li class="menu__item">
-                  <a href="./reviews.html" class="menu__link-nav">Отзывы</a>
-                </li>
-                <li class="menu__item">
-                  <a href="./faqs.html" class="menu__link-nav">Вопросы</a>
-                </li>
-                <li class="menu__item">
-                  <a href="./basket.html" class="menu__link-nav"
-                    >Корзина
-                    <svg class="cart__img">
-                      <use xlink:href="./img/sprite.svg#cart"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </nav>
-            <div class="header__burger">
-              <div class="header__social">
-                <a href="#" class="social__link">
-                  <svg class="social__img">
-                    <use xlink:href="./img/sprite.svg#tg"></use>
-                  </svg>
-                </a>
-                <a href="#" class="social__link">
-                  <svg class="social__img">
-                    <use xlink:href="./img/sprite.svg#vk"></use>
-                  </svg>
-                </a>
-              </div>
-              <div class="cart__cover">
-                <a href="./basket.html" class="cart header__cart">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Корзина - Зоопсихолог Сысоева Ольга</title>
+  <link rel="stylesheet" href="./styles/main.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <main class="maincontent">
+      <header class="header">
+        <div class="container header__container">
+          <a href="./index.html" class="logo">
+            <img src="./img/logo.png" alt="Логотип" class="logo__img" />
+          </a>
+          <nav class="menu header__menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="./index.html" class="menu__link-nav">Главная</a>
+              </li>
+              <li class="menu__item">
+                <a href="./webinars.html" class="menu__link-nav">Магазин</a>
+              </li>
+              <li class="menu__item">
+                <a href="./reviews.html" class="menu__link-nav">Отзывы</a>
+              </li>
+              <li class="menu__item">
+                <a href="./faqs.html" class="menu__link-nav">Вопросы</a>
+              </li>
+              <li class="menu__item">
+                <a href="./basket.html" class="menu__link-nav">Корзина
                   <svg class="cart__img">
                     <use xlink:href="./img/sprite.svg#cart"></use>
                   </svg>
+                  <span class="cart__cover-count">2</span>
                 </a>
-              </div>
-              <svg class="burger__icon">
-                <use xlink:href="./img/sprite.svg#burger"></use>
-              </svg>
-              <nav class="burger__nav" id="headerBurger">
-                <div class="close" id="burgerClose">
-                  <svg class="close__img">
-                    <use xlink:href="./img/sprite.svg#close"></use>
-                  </svg>
-                </div>
-              </nav>
-            </div>
-          </div>
-        </header>
-
-        <section class="books store">
-          <div class="container store__container">
-            <h1 class="main__title bin">Корзина</h1>
-            <div class="basket__products basket">
-              <ul class="basket__list">
-                <li class="basket__list_head">
-                  <label class="basket__list_check">
-                    <input
-                      class="basket__list__checkinp"
-                      type="checkbox"
-                      id="selectAll"
-                    />
-                    <span class="basket__list_checkbox"></span>
-                    <div class="basket__list__text" id="selectAll">
-                      Выбрать все
-                    </div>
-                  </label>
-                </li>
-                <li class="basket__item">
-                  <label class="basket__list_check">
-                    <input
-                      class="basket__list__checkinp"
-                      type="checkbox"
-                      id="select"
-                    />
-                    <span class="basket__list_checkbox"></span>
-                  </label>
-                  <div class="basket__list_img">
-                    <img src="./img/basket1.png" />
-                  </div>
-                  <div class="basket__item_block">
-                    <h3 class="basket__item_title">«Этология для чайников»</h3>
-                    <h3 class="basket__item_desctiption">*Вебинар в записи</h3>
-                    <div class="basket__item_div">
-                      <h3 class="basket__item_price">1100 ₽</h3>
-                      <svg class="basket__item_svg">
-                        <use xlink:href="./img/sprite.svg#basket"></use>
-                      </svg>
-                    </div>
-                  </div>
-                </li>
-                <li class="basket__item">
-                  <label class="basket__list_check">
-                    <input
-                      class="basket__list__checkinp"
-                      type="checkbox"
-                      id="select"
-                    />
-                    <span class="basket__list_checkbox"></span>
-                  </label>
-
-                  <div class="basket__list_img">
-                    <img src="./img/basket3.png" />
-                  </div>
-                  <div class="basket__item_block">
-                    <h3 class="basket__item_title">
-                      «Цифровые шпаргалки от Сысоевой»
-                    </h3>
-                    <h3 class="basket__item_desctiption">
-                      «Цифровые шпаргалки от Сысоевой»
-                    </h3>
-                    <div class="basket__item_div">
-                      <h3 class="basket__item_price">1800 ₽</h3>
-                      <svg class="basket__item_svg">
-                        <use xlink:href="./img/sprite.svg#basket"></use>
-                      </svg>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-
-              <div class="basket__price">
-                <div class="basket__price_end">
-                  <h3 class="basket__price_text">Итого (2)</h3>
-                  <div class="basket__price_money">2900</div>
-                </div>
-
-                <div class="basket__price_line"></div>
-                <button href="#" class="basket__button">Оформить заказ</button>
-              </div>
-            </div>
-          </div>
-        </section>
-      </main>
-
-      <footer class="footer">
-        <div class="container footer__container">
-          <div class="footer__contacts">
-            <a href="./index.html" class="footer__logo">
-              <img
-                src="./img/logo-footer.png"
-                alt="Логотип"
-                class="footer__logo-img"
-              />
-            </a>
-
-            <nav class="menu footer__menu">
-              <ul class="footer__menu-list">
-                <li class="footer__menu-item">
-                  <a href="./webinars.html" class="footer__menu-link"
-                    >Вебинары</a
-                  >
-                </li>
-                <li class="footer__menu-item">
-                  <a href="./books.html" class="footer__menu-link">Книги</a>
-                </li>
-                <li class="footer__menu-item">
-                  <a href="./cheat-sheets.html" class="footer__menu-link"
-                    >Шпаргалки</a
-                  >
-                </li>
-                <li class="footer__menu-item">
-                  <a href="./webinar-kits.html" class="footer__menu-link"
-                    >Комплект вебинаров</a
-                  >
-                </li>
-              </ul>
-            </nav>
-
-            <div class="footer__connect">
-              <div class="footer__text">Связаться со мной:</div>
-              <ul class="footer__socials social">
-                <li class="social__item">
-                  <a href="#" class="social__link">
-                    <svg class="social__img social__img--footer">
-                      <use xlink:href="./img/sprite.svg#tg"></use>
-                    </svg>
-                  </a>
-                </li>
-
-                <li class="social__item">
-                  <a href="#" class="social__link">
-                    <svg class="social__img social__img--footer">
-                      <use xlink:href="./img/sprite.svg#vk"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <ul class="footer__politics">
-              <li class="footer__politic">
-                <a href="#" class="footer__politic-link"
-                  >Политика конфиденциальности</a
-                >
               </li>
-              <li class="footer__politic">
-                <a href="#" class="footer__politic-link"
-                  >Пользовательское соглашение</a
-                >
+            </ul>
+          </nav>
+          <div class="header__burger">
+            <div class="header__social">
+              <a href="#" class="social__link">
+                <svg class="social__img">
+                  <use xlink:href="./img/sprite.svg#tg"></use>
+                </svg>
+              </a>
+              <a href="#" class="social__link">
+                <svg class="social__img">
+                  <use xlink:href="./img/sprite.svg#vk"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="cart__cover">
+              <a href="./basket.html" class="cart header__cart">
+                <svg class="cart__img">
+                  <use xlink:href="./img/sprite.svg#cart"></use>
+                </svg>
+                <span class="cart__cover-count">2</span>
+              </a>
+
+            </div>
+            <svg class="burger__icon">
+              <use xlink:href="./img/sprite.svg#burger"></use>
+            </svg>
+            <nav class="burger__nav" id="headerBurger">
+              <div class="close" id="burgerClose">
+                <svg class="close__img">
+                  <use xlink:href="./img/sprite.svg#close"></use>
+                </svg>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+      <section class="books store">
+        <div class="container store__container">
+          <h1 class="main__title bin">Корзина(<span class="basket__total-count">2</span>)</h1>
+          <div class="basket__products basket">
+            <ul class="basket__list">
+              <li class="basket__list_head">
+                <label class="basket__list_check">
+                  <input class="basket__list__checkinp" type="checkbox" id="selectAll" />
+                  <span class="basket__list_checkbox"></span>
+                  <div class="basket__list__text" id="selectAll">
+                    Выбрать все
+                  </div>
+                </label>
+              </li>
+              <li class="basket__item">
+                <label class="basket__list_check">
+                  <input class="basket__list__checkinp" type="checkbox" id="select" />
+                  <span class="basket__list_checkbox"></span>
+                </label>
+                <div class="basket__list_img">
+                  <img src="./img/basket1.png" />
+                </div>
+                <div class="basket__item_block">
+                  <h3 class="basket__item_title">«Этология для чайников»</h3>
+                  <h3 class="basket__item_desctiption">*Вебинар в записи</h3>
+                  <div class="basket__item_div">
+                    <div class="basket__item_price-box">
+                      <span class="basket__item_price">1100 ₽</span>
+                    </div>
+                    <svg class="basket__item_svg">
+                      <use xlink:href="./img/sprite.svg#basket"></use>
+                    </svg>
+                  </div>
+                </div>
+              </li>
+              <li class="basket__item">
+                <label class="basket__list_check">
+                  <input class="basket__list__checkinp" type="checkbox" id="select" />
+                  <span class="basket__list_checkbox"></span>
+                </label>
+                <div class="basket__list_img">
+                  <img src="./img/basket1.png" />
+                </div>
+                <div class="basket__item_block">
+                  <h3 class="basket__item_title">«Этология для чайников»</h3>
+                  <h3 class="basket__item_desctiption">*Вебинар в записи</h3>
+                  <div class="basket__item_div">
+                    <div class="basket__item_price-box">
+                      <span class="basket__item_price">1100 ₽</span>
+                    </div>
+                    <svg class="basket__item_svg">
+                      <use xlink:href="./img/sprite.svg#basket"></use>
+                    </svg>
+                  </div>
+                </div>
+              </li>
+              <li class="basket__item">
+                <label class="basket__list_check">
+                  <input class="basket__list__checkinp" type="checkbox" id="select" />
+                  <span class="basket__list_checkbox"></span>
+                </label>
+                <div class="basket__list_img">
+                  <img src="./img/basket1.png" />
+                </div>
+                <div class="basket__item_block">
+                  <h3 class="basket__item_title">«Этология для чайников»</h3>
+                  <h3 class="basket__item_desctiption">*Вебинар в записи</h3>
+                  <div class="basket__item_div">
+                    <div class="basket__item_price-box">
+                      <span class="basket__item_price-discount">4350 ₽</span>
+                      <span class="basket__item_price">1100 ₽</span>
+                    </div>
+                    <svg class="basket__item_svg">
+                      <use xlink:href="./img/sprite.svg#basket"></use>
+                    </svg>
+                  </div>
+                </div>
+              </li>
+              <li class="basket__item">
+                <label class="basket__list_check">
+                  <input class="basket__list__checkinp" type="checkbox" id="select" />
+                  <span class="basket__list_checkbox"></span>
+                </label>
+                <div class="basket__list_img">
+                  <img src="./img/basket1.png" />
+                </div>
+                <div class="basket__item_block">
+                  <h3 class="basket__item_title">«Этология для чайников»</h3>
+                  <h3 class="basket__item_desctiption">*Вебинар в записи</h3>
+                  <div class="basket__item_div">
+                    <div class="basket__item_price-box">
+                      <span class="basket__item_price-discount">4350 ₽</span>
+                      <span class="basket__item_price">1100 ₽</span>
+                    </div>
+                    <svg class="basket__item_svg">
+                      <use xlink:href="./img/sprite.svg#basket"></use>
+                    </svg>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <div class="basket__price">
+              <div class="basket__price_end">
+                <h3 class="basket__price_text">Итого (2)</h3>
+                <div class="basket__price_money">2900 ₽</div>
+              </div>
+              <a href="./order.html" class="basket__button">Оформить заказ</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__contacts">
+          <a href="./index.html" class="footer__logo">
+            <img src="./img/logo-footer.png" alt="Логотип" class="footer__logo-img" />
+          </a>
+
+          <nav class="menu footer__menu">
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <a href="./webinars.html" class="footer__menu-link">Вебинары</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="./books.html" class="footer__menu-link">Книги</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="./cheat-sheets.html" class="footer__menu-link">Шпаргалки</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="./webinar-kits.html" class="footer__menu-link">Комплект вебинаров</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="footer__connect">
+            <div class="footer__text">Связаться со мной:</div>
+            <ul class="footer__socials social">
+              <li class="social__item">
+                <a href="#" class="social__link">
+                  <svg class="social__img social__img--footer">
+                    <use xlink:href="./img/sprite.svg#tg"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="social__item">
+                <a href="#" class="social__link">
+                  <svg class="social__img social__img--footer">
+                    <use xlink:href="./img/sprite.svg#vk"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
           </div>
-
-          <div class="footer__copyright">© Зоопсихолог Сысоева</div>
+          <ul class="footer__politics">
+            <li class="footer__politic">
+              <a href="./info.html" class="footer__politic-link">Политика конфиденциальности</a>
+            </li>
+            <li class="footer__politic">
+              <a href="./info.html" class="footer__politic-link">Пользовательское соглашение</a>
+            </li>
+          </ul>
         </div>
-      </footer>
-    </div>
-    <script src="./scripts/checkBox.js"></script>
-    <script src="./scripts/burgerMenu.js"></script>
-    <script src="./scripts/menu.js"></script>
-  </body>
+        <div class="footer__copyright">©Зоопсихолог Сысоева</div>
+      </div>
+    </footer>
+  </div>
+  <script src="./scripts/checkBox.js"></script>
+  <script src="./scripts/burgerMenu.js"></script>
+  <script src="./scripts/menu.js"></script>
+</body>
+
 </html>

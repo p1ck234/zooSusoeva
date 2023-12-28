@@ -1,426 +1,348 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Отзывы - Зоопсихолог Сысоева Ольга</title>
-    <link rel="stylesheet" href="./styles/main.css" />
-  </head>
 
-  <body>
-    <div class="wrapper">
-      <main class="maincontent">
-        <header class="header">
-          <div class="container header__container">
-            <a href="./index.html" class="logo">
-              <img src="./img/logo.png" alt="Логотип" class="logo__img" />
-            </a>
-            <nav class="menu header__menu">
-              <ul class="menu__list">
-                <li class="menu__item">
-                  <a href="./index.html" class="menu__link-nav">Главная</a>
-                </li>
-                <li class="menu__item">
-                  <a href="./webinars.html" class="menu__link-nav">Магазин</a>
-                </li>
-                <li class="menu__item">
-                  <a href="./reviews.html" class="menu__link-nav">Отзывы</a>
-                </li>
-                <li class="menu__item">
-                  <a href="./faqs.html" class="menu__link-nav">Вопросы</a>
-                </li>
-                <li class="menu__item">
-                  <a href="./basket.html" class="menu__link-nav"
-                    >Корзина
-                    <svg class="cart__img">
-                      <use xlink:href="./img/sprite.svg#cart"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </nav>
-            <div class="header__burger">
-              <div class="header__social">
-                <a href="#" class="social__link">
-                  <svg class="social__img">
-                    <use xlink:href="./img/sprite.svg#tg"></use>
-                  </svg>
-                </a>
-                <a href="#" class="social__link">
-                  <svg class="social__img">
-                    <use xlink:href="./img/sprite.svg#vk"></use>
-                  </svg>
-                </a>
-              </div>
-              <div class="cart__cover">
-                <a href="./basket.html" class="cart header__cart">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Отзывы - Зоопсихолог Сысоева Ольга</title>
+  <link rel="stylesheet" href="./styles/main.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <main class="maincontent">
+      <header class="header">
+        <div class="container header__container">
+          <a href="./index.html" class="logo">
+            <img src="./img/logo.png" alt="Логотип" class="logo__img" />
+          </a>
+          <nav class="menu header__menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="./index.html" class="menu__link-nav">Главная</a>
+              </li>
+              <li class="menu__item">
+                <a href="./webinars.html" class="menu__link-nav">Магазин</a>
+              </li>
+              <li class="menu__item">
+                <a href="./reviews.html" class="menu__link-nav">Отзывы</a>
+              </li>
+              <li class="menu__item">
+                <a href="./faqs.html" class="menu__link-nav">Вопросы</a>
+              </li>
+              <li class="menu__item">
+                <a href="./basket.html" class="menu__link-nav">Корзина
                   <svg class="cart__img">
                     <use xlink:href="./img/sprite.svg#cart"></use>
                   </svg>
+                  <span class="cart__cover-count">2</span>
                 </a>
-              </div>
-              <svg class="burger__icon">
-                <use xlink:href="./img/sprite.svg#burger"></use>
-              </svg>
-              <nav class="burger__nav" id="headerBurger">
-                <div class="close" id="burgerClose">
-                  <svg class="close__img">
-                    <use xlink:href="./img/sprite.svg#close"></use>
-                  </svg>
-                </div>
-              </nav>
-            </div>
-          </div>
-        </header>
-
-        <nav class="breadcrumbs">
-          <div class="container breadcrumbs__container">
-            <ul class="breadcrumbs__list">
-              <li class="breadcrumbs__item">
-                <a href="./index.html" class="breadcrumbs__link">Главная</a>
-              </li>
-              <li class="breadcrumbs__item">
-                <a href="./faqs.html" class="breadcrumbs__link">Отзывы</a>
               </li>
             </ul>
-          </div>
-        </nav>
-
-        <div class="reviews" id="faqs">
-          <div class="reviews__container">
-            <h2 class="reviews__container_title">Отзывы</h2>
-            <div class="reviews__items_container">
-              <div class="reviews__items_item">
-                <div class="reviews__items_user">
-                  <img
-                    class="reviews__items_ava"
-                    src="./img/user_rev/user1.png"
-                  />
-                  <div class="reviews__items_name">Екатерина</div>
-                </div>
-                <div class="reviews__items_line"></div>
-                <h3 class="reviews__items_text">
-                  Ой, девочки. По Олиным урокам и люди меняются. Мы отрабатываем
-                  ритуал приветствия, долго, упорно, с опусканием рук иногда. И
-                  вот представьте, вставляю в дверь ключ - тишина, открываю
-                  дверь - тишина, захожу … собаки в прихожей  нет (5! лет она
-                  лаяла на весь подъезд). Сердце остановилось…Захожу в комнату -
-                  спит. И вместо того, чтоб ликовать, пошла в туалет плакать
-                  (чтоб собака не видела вожака таким). А раньше бы схватила на
-                  руки ))
-                </h3>
-              </div>
-              <div class="reviews__items_photo">
-                <img
-                  class="reviews__items_ava"
-                  src="./img/reviews/revPhoto1.png"
-                />
-              </div>
-              <div class="reviews__items_photo">
-                <img
-                  class="reviews__items_ava"
-                  src="./img/reviews/revPhoto2.png"
-                />
-              </div>
-
-              <div class="reviews__items_item">
-                <div class="reviews__items_user">
-                  <img
-                    class="reviews__items_ava"
-                    src="./img/user_rev/user3.png"
-                  />
-                  <div class="reviews__items_name">Светлана</div>
-                </div>
-                <div class="reviews__items_line"></div>
-                <h3 class="reviews__items_text">
-                  Я, перепробовала все, что только знала. Хвалила, давала
-                  вкусняшки, но ни чего не работало.  В полтора года, начала нам
-                  метить кровать и вещи. тут то, мне и посоветовали Олю. Стала
-                  жить по Шпаргалкам (хотя, тяжело было себя перевоспитать)
-                  помогли Вебинары. Собака изменилась через 2 недели. Это,
-                  просто чудо)))
-                </h3>
-              </div>
-
-              <div class="reviews__items_photo">
-                <img
-                  class="reviews__items_ava"
-                  src="./img/reviews/revPhoto3.png"
-                />
-              </div>
-
-              <div class="reviews__items_item">
-                <div class="reviews__items_user">
-                  <img
-                    class="reviews__items_ava"
-                    src="./img/user_rev/user4.png"
-                  />
-                  <div class="reviews__items_name">Дарья</div>
-                </div>
-                <div class="reviews__items_line"></div>
-                <h3 class="reviews__items_text">
-                  Купила Этологию и Метки. Применять на практике стала сразу же.
-                  Прошел день, уже вижу изменения в поведении собаки.
-                </h3>
-              </div>
-
-              <div class="reviews__items_item">
-                <div class="reviews__items_user">
-                  <img
-                    class="reviews__items_ava"
-                    src="./img/user_rev/user2.png"
-                  />
-                  <div class="reviews__items_name">Людмила</div>
-                </div>
-                <div class="reviews__items_line"></div>
-                <h3 class="reviews__items_text">
-                  У нас пока щенок и писает дома по норме. Решила действовать на
-                  опережение и уже заметила несколько своих ошибок , которые
-                  потенциально могут привести к меткам дома.  Благодарю за
-                  ценную информацию, упакованную в 40 минут времени. Ноль воды..
-                  и Ваше чувство юмора в подарок.
-                </h3>
-              </div>
-
-              <div class="reviews__items_item">
-                <div class="reviews__items_user">
-                  <img
-                    class="reviews__items_ava"
-                    src="./img/user_rev/user5.png"
-                  />
-                  <div class="reviews__items_name">Ксения</div>
-                </div>
-                <div class="reviews__items_line"></div>
-                <h3 class="reviews__items_text">
-                  Вебинары 100% работают! На себе и своей собаке проверено!
-                  Починила легко, да еще и командам на дистанте обучила.
-                </h3>
-              </div>
-
-              <div class="reviews__items_item">
-                <div class="reviews__items_user">
-                  <img
-                    class="reviews__items_ava"
-                    src="./img/user_rev/user6.png"
-                  />
-                  <div class="reviews__items_name">Илья</div>
-                </div>
-                <div class="reviews__items_line"></div>
-                <h3 class="reviews__items_text">
-                  Никаких проблем, благодаря Вам! Гости даже не замечают, что у
-                  нас 2 собаки. Они не пасутся у стола, не крутятся под ногами,
-                  не тявкают. Познакомились-понюхались и ушли. Красота!
-                </h3>
-              </div>
-
-              <div class="reviews__items_item">
-                <div class="reviews__items_user">
-                  <img
-                    class="reviews__items_ava"
-                    src="./img/user_rev/user7.png"
-                  />
-                  <div class="reviews__items_name">Ольга</div>
-                </div>
-                <div class="reviews__items_line"></div>
-                <h3 class="reviews__items_text">
-                  Раньше я была вопящим продолжением поводка, которое мешало
-                  моему псу не шуточно. Вебинар “Выгул”, книга, шпаргалки и
-                  каждое ценное слово Оли - творят чудеса в общении с псом.
-                  Общение без предъяв с обеих сторон - когда ты понимаешь и тебя
-                  понимаю
-                </h3>
-              </div>
-
-              <div class="reviews__items_photo">
-                <img
-                  class="reviews__items_ava"
-                  src="./img/reviews/revPhoto4.png"
-                />
-              </div>
-
-              <div class="reviews__items_item">
-                <div class="reviews__items_user">
-                  <img
-                    class="reviews__items_ava"
-                    src="./img/user_rev/user8.png"
-                  />
-                  <div class="reviews__items_name">Дмитрий</div>
-                </div>
-                <div class="reviews__items_line"></div>
-                <h3 class="reviews__items_text">
-                  В нашей семье 5 волонтерских французских бульдогов разных
-                  возрастов и с разными судьбами. Все получается наладиться
-                  между ними и нами ТОЛЬКО благодаря Ольге Сысоевой!!!!! Спасибо
-                  Вам огромное!!! Только благодаря Вам мы и собаки нашли “общий
-                  язык” и живем в радости!
-                </h3>
-              </div>
-
-              <div class="reviews__items_photo">
-                <img
-                  class="reviews__items_ava"
-                  src="./img/reviews/revPhoto5.png"
-                />
-              </div>
-
-              <div class="reviews__items_photo">
-                <img
-                  class="reviews__items_ava"
-                  src="./img/reviews/revPhoto6.png"
-                />
-              </div>
-
-              <div class="reviews__items_item">
-                <div class="reviews__items_user">
-                  <img
-                    class="reviews__items_ava"
-                    src="./img/user_rev/user9.png"
-                  />
-                  <div class="reviews__items_name">Юлия</div>
-                </div>
-                <div class="reviews__items_line"></div>
-                <h3 class="reviews__items_text">
-                  Дома -замечательная девочка, на улице как на войне! Но,
-                  спасибо вебинару Выгул. Девочка поняла, что не все враги. Лай
-                  тихонько уходит. Ольга, спасибо за бесценный подарок!
-                </h3>
-              </div>
-
-              <div class="reviews__items_photo">
-                <img
-                  class="reviews__items_ava"
-                  src="./img/reviews/revPhoto7.png"
-                />
-              </div>
-
-              <div class="reviews__items_photo">
-                <img
-                  class="reviews__items_ava"
-                  src="./img/reviews/revPhoto8.png"
-                />
-              </div>
-
-              <div class="reviews__items_item">
-                <div class="reviews__items_user">
-                  <img
-                    class="reviews__items_ava"
-                    src="./img/user_rev/user10.png"
-                  />
-                  <div class="reviews__items_name">Анастасия</div>
-                </div>
-                <div class="reviews__items_line"></div>
-                <h3 class="reviews__items_text">
-                  Ни один кинолог, ни один зоопсихолог не дал мне столько,
-                  сколько вы в одну Шпаргалку. Но, я уверена под вашим
-                  руководством, мы все исправим.
-                </h3>
-              </div>
-
-              <div class="reviews__items_item">
-                <div class="reviews__items_user">
-                  <img
-                    class="reviews__items_ava"
-                    src="./img/user_rev/user11.png"
-                  />
-                  <div class="reviews__items_name">Мария</div>
-                </div>
-                <div class="reviews__items_line"></div>
-                <h3 class="reviews__items_text">
-                  У меня взрослая собака, которая “поломалась “ на 14- ом году
-                  жизни, выла в наше отсутствие, грызла порог у входной двери,
-                  начала ссать где придется.  Начала смотреть ваши вебинары,
-                  купила шпаргалки, наша жизнь кардинально изменилась. Низкий
-                  вам поклон и спасибо за труд!
-                </h3>
-              </div>
+          </nav>
+          <div class="header__burger">
+            <div class="header__social">
+              <a href="#" class="social__link">
+                <svg class="social__img">
+                  <use xlink:href="./img/sprite.svg#tg"></use>
+                </svg>
+              </a>
+              <a href="#" class="social__link">
+                <svg class="social__img">
+                  <use xlink:href="./img/sprite.svg#vk"></use>
+                </svg>
+              </a>
             </div>
+            <div class="cart__cover">
+              <a href="./basket.html" class="cart header__cart">
+                <svg class="cart__img">
+                  <use xlink:href="./img/sprite.svg#cart"></use>
+                </svg>
+                <span class="cart__cover-count">2</span>
+              </a>
 
-            <button class="button button__light button__light-revs">
-              <span class="button__text">Показать еще</span>
-
-              <svg class="button__icon button__icon--dark">
-                <use xlink:href="./img/sprite.svg#arrow"></use>
-              </svg>
-            </button>
-          </div>
-        </div>
-      </main>
-      <footer class="footer">
-        <div class="container footer__container">
-          <div class="footer__contacts">
-            <a href="./index.html" class="footer__logo">
-              <img
-                src="./img/logo-footer.png"
-                alt="Логотип"
-                class="footer__logo-img"
-              />
-            </a>
-
-            <nav class="menu footer__menu">
-              <ul class="footer__menu-list">
-                <li class="footer__menu-item">
-                  <a href="./webinars.html" class="footer__menu-link"
-                    >Вебинары</a
-                  >
-                </li>
-                <li class="footer__menu-item">
-                  <a href="./books.html" class="footer__menu-link">Книги</a>
-                </li>
-                <li class="footer__menu-item">
-                  <a href="./cheat-sheets.html" class="footer__menu-link"
-                    >Шпаргалки</a
-                  >
-                </li>
-                <li class="footer__menu-item">
-                  <a href="./webinar-kits.html" class="footer__menu-link"
-                    >Комплект вебинаров</a
-                  >
-                </li>
-              </ul>
+            </div>
+            <svg class="burger__icon">
+              <use xlink:href="./img/sprite.svg#burger"></use>
+            </svg>
+            <nav class="burger__nav" id="headerBurger">
+              <div class="close" id="burgerClose">
+                <svg class="close__img">
+                  <use xlink:href="./img/sprite.svg#close"></use>
+                </svg>
+              </div>
             </nav>
+          </div>
+        </div>
+      </header>
 
-            <div class="footer__connect">
-              <div class="footer__text">Связаться со мной:</div>
-              <ul class="footer__socials social">
-                <li class="social__item">
-                  <a href="#" class="social__link">
-                    <svg class="social__img social__img--footer">
-                      <use xlink:href="./img/sprite.svg#tg"></use>
-                    </svg>
-                  </a>
-                </li>
+      <nav class="breadcrumbs">
+        <div class="container breadcrumbs__container">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a href="./index.html" class="breadcrumbs__link">Главная</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a href="./faqs.html" class="breadcrumbs__link">Отзывы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
 
-                <li class="social__item">
-                  <a href="#" class="social__link">
-                    <svg class="social__img social__img--footer">
-                      <use xlink:href="./img/sprite.svg#vk"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
+      <div class="reviews container" id="faqs">
+        <div class="reviews__container">
+          <h2 class="reviews__container_title">Отзывы</h2>
+          <div class="reviews__items_container">
+            <div class="reviews__items_item">
+              <div class="reviews__items_user">
+                <img class="reviews__items_ava" src="./img/user_rev/user1.png" />
+                <div class="reviews__items_name">Екатерина</div>
+              </div>
+              <h3 class="reviews__items_text">
+                Ой, девочки. По Олиным урокам и люди меняются. Мы отрабатываем
+                ритуал приветствия, долго, упорно, с опусканием рук иногда. И
+                вот представьте, вставляю в дверь ключ - тишина, открываю
+                дверь - тишина, захожу … собаки в прихожей  нет (5! лет она
+                лаяла на весь подъезд). Сердце остановилось…Захожу в комнату -
+                спит. И вместо того, чтоб ликовать, пошла в туалет плакать
+                (чтоб собака не видела вожака таким). А раньше бы схватила на
+                руки ))
+              </h3>
             </div>
-            <ul class="footer__politics">
-              <li class="footer__politic">
-                <a href="#" class="footer__politic-link"
-                  >Политика конфиденциальности</a
-                >
+            <div class="reviews__items_photo reviews__items_item">
+              <img class="reviews__items_ava" src="./img/reviews/revPhoto1.png" />
+            </div>
+            <div class="reviews__items_photo reviews__items_item">
+              <img class="reviews__items_ava" src="./img/reviews/revPhoto2.png" />
+            </div>
+
+            <div class="reviews__items_item">
+              <div class="reviews__items_user">
+                <img class="reviews__items_ava" src="./img/user_rev/user3.png" />
+                <div class="reviews__items_name">Светлана</div>
+              </div>
+              <h3 class="reviews__items_text">
+                Я, перепробовала все, что только знала. Хвалила, давала
+                вкусняшки, но ни чего не работало.  В полтора года, начала нам
+                метить кровать и вещи. тут то, мне и посоветовали Олю. Стала
+                жить по Шпаргалкам (хотя, тяжело было себя перевоспитать)
+                помогли Вебинары. Собака изменилась через 2 недели. Это,
+                просто чудо)))
+              </h3>
+            </div>
+
+            <div class="reviews__items_photo reviews__items_item">
+              <img class="reviews__items_ava" src="./img/reviews/revPhoto3.png" />
+            </div>
+
+            <div class="reviews__items_item">
+              <div class="reviews__items_user">
+                <img class="reviews__items_ava" src="./img/user_rev/user4.png" />
+                <div class="reviews__items_name">Дарья</div>
+              </div>
+              <h3 class="reviews__items_text">
+                Купила Этологию и Метки. Применять на практике стала сразу же.
+                Прошел день, уже вижу изменения в поведении собаки.
+              </h3>
+            </div>
+
+            <div class="reviews__items_item">
+              <div class="reviews__items_user">
+                <img class="reviews__items_ava" src="./img/user_rev/user2.png" />
+                <div class="reviews__items_name">Людмила</div>
+              </div>
+              <h3 class="reviews__items_text">
+                У нас пока щенок и писает дома по норме. Решила действовать на
+                опережение и уже заметила несколько своих ошибок , которые
+                потенциально могут привести к меткам дома.  Благодарю за
+                ценную информацию, упакованную в 40 минут времени. Ноль воды..
+                и Ваше чувство юмора в подарок.
+              </h3>
+            </div>
+
+            <div class="reviews__items_item">
+              <div class="reviews__items_user">
+                <img class="reviews__items_ava" src="./img/user_rev/user5.png" />
+                <div class="reviews__items_name">Ксения</div>
+              </div>
+              <h3 class="reviews__items_text">
+                Вебинары 100% работают! На себе и своей собаке проверено!
+                Починила легко, да еще и командам на дистанте обучила.
+              </h3>
+            </div>
+
+            <div class="reviews__items_item">
+              <div class="reviews__items_user">
+                <img class="reviews__items_ava" src="./img/user_rev/user6.png" />
+                <div class="reviews__items_name">Илья</div>
+              </div>
+              <h3 class="reviews__items_text">
+                Никаких проблем, благодаря Вам! Гости даже не замечают, что у
+                нас 2 собаки. Они не пасутся у стола, не крутятся под ногами,
+                не тявкают. Познакомились-понюхались и ушли. Красота!
+              </h3>
+            </div>
+
+            <div class="reviews__items_item">
+              <div class="reviews__items_user">
+                <img class="reviews__items_ava" src="./img/user_rev/user7.png" />
+                <div class="reviews__items_name">Ольга</div>
+              </div>
+              <h3 class="reviews__items_text">
+                Раньше я была вопящим продолжением поводка, которое мешало
+                моему псу не шуточно. Вебинар “Выгул”, книга, шпаргалки и
+                каждое ценное слово Оли - творят чудеса в общении с псом.
+                Общение без предъяв с обеих сторон - когда ты понимаешь и тебя
+                понимаю
+              </h3>
+            </div>
+
+            <div class="reviews__items_photo reviews__items_item">
+              <img class="reviews__items_ava" src="./img/reviews/revPhoto4.png" />
+            </div>
+
+            <div class="reviews__items_item">
+              <div class="reviews__items_user">
+                <img class="reviews__items_ava" src="./img/user_rev/user8.png" />
+                <div class="reviews__items_name">Дмитрий</div>
+              </div>
+              <h3 class="reviews__items_text">
+                В нашей семье 5 волонтерских французских бульдогов разных
+                возрастов и с разными судьбами. Все получается наладиться
+                между ними и нами ТОЛЬКО благодаря Ольге Сысоевой!!!!! Спасибо
+                Вам огромное!!! Только благодаря Вам мы и собаки нашли “общий
+                язык” и живем в радости!
+              </h3>
+            </div>
+
+            <div class="reviews__items_photo reviews__items_item">
+              <img class="reviews__items_ava" src="./img/reviews/revPhoto5.png" />
+            </div>
+
+            <div class="reviews__items_photo reviews__items_item">
+              <img class="reviews__items_ava" src="./img/reviews/revPhoto6.png" />
+            </div>
+
+            <div class="reviews__items_item">
+              <div class="reviews__items_user">
+                <img class="reviews__items_ava" src="./img/user_rev/user9.png" />
+                <div class="reviews__items_name">Юлия</div>
+              </div>
+              <h3 class="reviews__items_text">
+                Дома -замечательная девочка, на улице как на войне! Но,
+                спасибо вебинару Выгул. Девочка поняла, что не все враги. Лай
+                тихонько уходит. Ольга, спасибо за бесценный подарок!
+              </h3>
+            </div>
+
+            <div class="reviews__items_photo reviews__items_item">
+              <img class="reviews__items_ava" src="./img/reviews/revPhoto7.png" />
+            </div>
+
+            <div class="reviews__items_photo reviews__items_item">
+              <img class="reviews__items_ava" src="./img/reviews/revPhoto8.png" />
+            </div>
+
+            <div class="reviews__items_item">
+              <div class="reviews__items_user">
+                <img class="reviews__items_ava" src="./img/user_rev/user10.png" />
+                <div class="reviews__items_name">Анастасия</div>
+              </div>
+              <h3 class="reviews__items_text">
+                Ни один кинолог, ни один зоопсихолог не дал мне столько,
+                сколько вы в одну Шпаргалку. Но, я уверена под вашим
+                руководством, мы все исправим.
+              </h3>
+            </div>
+
+            <div class="reviews__items_item">
+              <div class="reviews__items_user">
+                <img class="reviews__items_ava" src="./img/user_rev/user11.png" />
+                <div class="reviews__items_name">Мария</div>
+              </div>
+              <h3 class="reviews__items_text">
+                У меня взрослая собака, которая “поломалась “ на 14- ом году
+                жизни, выла в наше отсутствие, грызла порог у входной двери,
+                начала ссать где придется.  Начала смотреть ваши вебинары,
+                купила шпаргалки, наша жизнь кардинально изменилась. Низкий
+                вам поклон и спасибо за труд!
+              </h3>
+            </div>
+          </div>
+
+          <button class="button button__light button__light-revs">
+            <span class="button__text">Показать еще</span>
+
+            <svg class="button__icon button__icon--dark">
+              <use xlink:href="./img/sprite.svg#arrow"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__contacts">
+          <a href="./index.html" class="footer__logo">
+            <img src="./img/logo-footer.png" alt="Логотип" class="footer__logo-img" />
+          </a>
+
+          <nav class="menu footer__menu">
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <a href="./webinars.html" class="footer__menu-link">Вебинары</a>
               </li>
-              <li class="footer__politic">
-                <a href="#" class="footer__politic-link"
-                  >Пользовательское соглашение</a
-                >
+              <li class="footer__menu-item">
+                <a href="./books.html" class="footer__menu-link">Книги</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="./cheat-sheets.html" class="footer__menu-link">Шпаргалки</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="./webinar-kits.html" class="footer__menu-link">Комплект вебинаров</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="footer__connect">
+            <div class="footer__text">Связаться со мной:</div>
+            <ul class="footer__socials social">
+              <li class="social__item">
+                <a href="#" class="social__link">
+                  <svg class="social__img social__img--footer">
+                    <use xlink:href="./img/sprite.svg#tg"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="social__item">
+                <a href="#" class="social__link">
+                  <svg class="social__img social__img--footer">
+                    <use xlink:href="./img/sprite.svg#vk"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
           </div>
-
-          <div class="footer__copyright">© Зоопсихолог Сысоева</div>
+          <ul class="footer__politics">
+            <li class="footer__politic">
+              <a href="./info.html" class="footer__politic-link">Политика конфиденциальности</a>
+            </li>
+            <li class="footer__politic">
+              <a href="./info.html" class="footer__politic-link">Пользовательское соглашение</a>
+            </li>
+          </ul>
         </div>
-      </footer>
-    </div>
-    <script src="./scripts/hideElem.js"></script>
-    <script src="./scripts/burgerMenu.js"></script>
-    <script src="./scripts/faq.js"></script>
-    <script src="./scripts/menu.js"></script>
-  </body>
+
+        <div class="footer__copyright">© Зоопсихолог Сысоева</div>
+      </div>
+    </footer>
+  </div>
+  <script src="./scripts/hideElem.js"></script>
+  <script src="./scripts/burgerMenu.js"></script>
+  <script src="./scripts/faq.js"></script>
+  <script src="./scripts/menu.js"></script>
+</body>
+
 </html>

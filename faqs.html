@@ -1,384 +1,373 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Корзина - Зоопсихолог Сысоева Ольга</title>
-    <link rel="stylesheet" href="./styles/main.css" />
-  </head>
 
-  <body>
-    <div class="wrapper">
-      <main class="maincontent">
-        <header class="header">
-          <div class="container header__container">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Корзина - Зоопсихолог Сысоева Ольга</title>
+  <link rel="stylesheet" href="./styles/main.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <main class="maincontent">
+      <header class="header">
+        <div class="container header__container">
             <a href="./index.html" class="logo">
-              <img src="./img/logo.png" alt="Логотип" class="logo__img" />
+                <img src="./img/logo.png" alt="Логотип" class="logo__img" />
             </a>
             <nav class="menu header__menu">
-              <ul class="menu__list">
-                <li class="menu__item">
-                  <a href="./index.html" class="menu__link-nav">Главная</a>
-                </li>
-                <li class="menu__item">
-                  <a href="./webinars.html" class="menu__link-nav">Магазин</a>
-                </li>
-                <li class="menu__item">
-                  <a href="./reviews.html" class="menu__link-nav">Отзывы</a>
-                </li>
-                <li class="menu__item">
-                  <a href="./faqs.html" class="menu__link-nav">Вопросы</a>
-                </li>
-                <li class="menu__item">
-                  <a href="./basket.html" class="menu__link-nav"
-                    >Корзина
-                    <svg class="cart__img">
-                      <use xlink:href="./img/sprite.svg#cart"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a href="./index.html" class="menu__link-nav">Главная</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="./webinars.html" class="menu__link-nav">Магазин</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="./reviews.html" class="menu__link-nav">Отзывы</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="./faqs.html" class="menu__link-nav">Вопросы</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="./basket.html" class="menu__link-nav">Корзина
+                            <svg class="cart__img">
+                                <use xlink:href="./img/sprite.svg#cart"></use>
+                            </svg>
+                            <span class="cart__cover-count">2</span>
+                        </a>
+                    </li>
+                </ul>
             </nav>
             <div class="header__burger">
-              <div class="header__social">
+                <div class="header__social">
+                    <a href="#" class="social__link">
+                        <svg class="social__img">
+                            <use xlink:href="./img/sprite.svg#tg"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="social__link">
+                        <svg class="social__img">
+                            <use xlink:href="./img/sprite.svg#vk"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="cart__cover">
+                    <a href="./basket.html" class="cart header__cart">
+                        <svg class="cart__img">
+                            <use xlink:href="./img/sprite.svg#cart"></use>
+                        </svg>
+                        <span class="cart__cover-count">2</span>
+                    </a>
+
+                </div>
+                <svg class="burger__icon">
+                    <use xlink:href="./img/sprite.svg#burger"></use>
+                </svg>
+                <nav class="burger__nav" id="headerBurger">
+                    <div class="close" id="burgerClose">
+                        <svg class="close__img">
+                            <use xlink:href="./img/sprite.svg#close"></use>
+                        </svg>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+      <nav class="breadcrumbs">
+        <div class="container breadcrumbs__container">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a href="./index.html" class="breadcrumbs__link">Главная</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a href="./faqs.html" class="breadcrumbs__link">Часто задаваемые вопросы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="faqs" id="faqs">
+        <div class="faqs__container">
+          <h2 class="faqs__container_title">Часто задаваемые вопросы</h2>
+          <div class="faqs__container_question">
+            <div class="faqs__container_items">
+              <div class="faqs__container_quest">Почему собака метит?</div>
+              <div class="faqs__container_answer">
+                Хозяин скажет: «Собака написала в квартире».
+                <p style="margin-bottom: 10px"></p>
+                А я скажу: «Написала, что враги не пройдут, территория
+                занята!».
+                <p style="margin-bottom: 10px"></p>
+                Причин, по которых питомец метит, может быть несколько, среди
+                которых, как ни странно, ваша гиперопека. Узнать, как решается
+                данная проблема можно из инструкции, шпаргалки, вебинара
+                «Метки» и «Этология».
+              </div>
+            </div>
+            <div class="faqs__container_items">
+              <div class="faqs__container_quest">
+                Самый запоминающийся случай из практики
+              </div>
+              <div class="faqs__container_answer">
+                Это первый кейс, который я решила дистанционно:
+                <p style="margin-bottom: 10px"></p>
+                2017 год, 3-летний стаф превратил  квартиру в руины. Хозяева
+                обращались и к попам, и к врачам – безрезультатно. Отчаялись,
+                были готовы  отказаться от собаки. Но я была уверена в своем
+                подходе!
+                <p style="margin-bottom: 10px"></p>
+                Ровно на 14-й день хозяин написал о том, что первый раз пришли
+                домой, квартира цела. Я расплакалась от счастья  и взяла за
+                эталон 14 дней на выстраивание иерархии. И, уверовав в силы и
+                знания, начала развивать дистанционное направление (магазин).
+                Сейчас у меня клиенты есть даже в Америке.
+              </div>
+            </div>
+            <div class="faqs__container_items">
+              <div class="faqs__container_quest">
+                Можно ли собаке в кровать?
+              </div>
+              <div class="faqs__container_answer">
+                Можно. Но только если вы позвали. 
+                <p style="margin-bottom: 10px"></p>
+                А подробнее о том, как любить собаку, но не избаловать ее, в
+                шпаргалке
+              </div>
+            </div>
+            <div class="faqs__container_items">
+              <div class="faqs__container_quest">
+                С собакой надо строго или ласково?
+              </div>
+              <div class="faqs__container_answer">
+                Как хотите, главное - спокойно. Это язык тела. Он им больше
+                понятен, чем истеричные крики или сюсюканье.
+                <p style="margin-bottom: 10px"></p>
+                Лидер так себя не ведет. От лидера веет спокойствием. С ним
+                хорошо и спокойно. 
+                <p style="margin-bottom: 10px"></p>
+                Счастливая собака - спокойная собака. О том, как заслужить
+                лидерство, целоваться и обниматься с собакой и при этом не
+                потерять авторитет, написано в “Шпаргалке” .
+              </div>
+            </div>
+            <div class="faqs__container_items">
+              <div class="faqs__container_quest">
+                Ваш подход эффективен только для щенков?
+              </div>
+              <div class="faqs__container_answer">
+                Не только. Собаки - ритуальные существа. И этим надо
+                пользоваться.
+                <p style="margin-bottom: 10px"></p>
+                Особенностями построения отношений со взрослыми собаками можно
+                овладеть на вебинаре “Проблемы взрослых собак”
+              </div>
+            </div>
+            <div class="faqs__container_items">
+              <div class="faqs__container_quest">
+                Можете ли вы позаниматься с моей собакой?
+              </div>
+              <div class="faqs__container_answer">
+                Да, провожу очную дрессировку (ссылка на магазин)
+                индивидуально или в небольших группах. Мытищи, ул. Мира д. 16.
+              </div>
+            </div>
+            <div class="faqs__container_items">
+              <div class="faqs__container_quest">
+                У нас большая семья. Кто должен прийти с собакой на очную
+                дрессировку?
+              </div>
+              <div class="faqs__container_answer">
+                Идеально приезжать всей семьей, детям – старше 6 лет.
+              </div>
+            </div>
+            <div class="faqs__container_items">
+              <div class="faqs__container_quest">
+                Поможете ли вы с дрессировкой, если я не могу попасть к вам на
+                очное занятие?
+              </div>
+              <div class="faqs__container_answer">
+                Могу порекомендовать дистанционные дрессировки (ссылка на
+                продукт).
+                <p style="margin-bottom: 10px"></p>
+                Ознакомьтесь с материалами и присылайте мне видео практических
+                результатов. Будем смотреть и корректировать.
+              </div>
+            </div>
+            <div class="faqs__container_items">
+              <div class="faqs__container_quest">Собака друг человека?</div>
+              <div class="faqs__container_answer">
+                Да, нас так учили, но оказывается сама собака об этом не
+                знает. Чтоб она стала вашим другом, то есть была удобной,
+                ненавязчивой, послушной – дрессировки и любви мало. Важен
+                статус! Мы коллективные, они стайные. Наука этология очень
+                сложная, но я смогла дать вам сложнейшую информацию простым и
+                понятным языком. Одноимённый вебинар поможет понять, а главное
+                в нём есть план как себя вести, чтоб стать лидером. Лидер –
+                это тот, кто всем распоряжается. Сила у того, кто обладает
+                знаниями, а не силой физической.
+              </div>
+            </div>
+            <div class="faqs__container_items">
+              <div class="faqs__container_quest">
+                Шпаргалка – это основной инструмент?
+              </div>
+              <div class="faqs__container_answer">
+                Шпаргалка – это основной инструмент, который дополняет любой
+                вебинар. Это конспект-инструкция, её просто нужно применить.
+                Собаку невозможно откорректировать, это стихия. Но можно
+                откорректировать своё к ней отношение, и она изменится сама.
+              </div>
+            </div>
+            <div class="faqs__container_items">
+              <div class="faqs__container_quest">
+                Нужно собаку кастрировать/стерилизовать?
+              </div>
+              <div class="faqs__container_answer">
+                Моя собака гиперактивная. Все говорят, надо её
+                кастрировать/стерилизовать и она успокоится. Нет! В природе
+                возбуждается только то, что возбуждают. Вебинар манипуляция, и
+                после просмотра, у вас спокойная собака!
+              </div>
+            </div>
+            <div class="faqs__container_items">
+              <div class="faqs__container_quest">Как управлять щенком?</div>
+              <div class="faqs__container_answer">
+                Мы купили щенка и как давай его любить. Мы его любить, а он
+                нас кусать. Мы его приучать, а он нам ссать. Мы его
+                воспитывать, а он нам пол квартиры сожрал. Вебинар щенок,
+                посмотреть внедрить, и в половое созревание влетим и не
+                заметим! Чтоб потом не говорить, возраст такой. Ведите себя
+                правильно, и в любом возрасте собака будет одинаково
+                управляема.
+              </div>
+            </div>
+            <div class="faqs__container_items">
+              <div class="faqs__container_quest">Собака компаньон</div>
+              <div class="faqs__container_answer">
+                У нас собака компаньон.Она не умеет оставаться одна, так
+                заводчик сказал. Он очень ориентирован на человека, поэтому мы
+                его отводим к бабушке, нанимаем догситтера, берем с собой.
+                Дорогие мои, вебинар проблемы взрослых собак, и ваша собака не
+                грызёт, не воет, не лает и не ходит как привязанная по дому за
+                вами.
+              </div>
+            </div>
+            <div class="faqs__container_items">
+              <div class="faqs__container_quest">
+                Собака метит от вредности, что мы только не делали, как
+                отучить?
+              </div>
+              <div class="faqs__container_answer">
+                Собака метит от вредности, что мы только не делали, как
+                отучить? Это совсем просто, вебинар метки! Приучения к туалету
+                не существует! А вы с успехом внедряли дурацкие советы –
+                хвалили, ругали. Вот и получили. Сами развязали мокрую вонючую
+                войну – сами и прекратим. Вебинар метки ваш помощник и
+                спаситель!
+              </div>
+            </div>
+            <div class="faqs__container_items">
+              <div class="faqs__container_quest">
+                Собака привередлива к еде
+              </div>
+              <div class="faqs__container_answer">
+                Моя собака не пищевик. Моя собака привереда. Моя собачка
+                капризуля. Все эти качества не имеют отношения к собаке)))
+                <p style="margin-bottom: 10px"></p>
+                Вебинар пищевые манипуляции, и ваша собака будет кушать как из
+                пулемёта)))
+              </div>
+            </div>
+            <div class="faqs__container_items">
+              <div class="faqs__container_quest">
+                Ревность собаки к ребенку
+              </div>
+              <div class="faqs__container_answer">
+                Моя собака меня ревнует. Рычит на ребенка, лает, когда малыш
+                плачет. Придётся её отдать. Вебинар младенец и собака ваш гид.
+                Ваш проводник в отношения между ребёнком человеческим и
+                собачьим)
+              </div>
+            </div>
+          </div>
+          <button class="button button__light button__light-faqs">
+            <span class="button__text">Показать еще</span>
+
+            <svg class="button__icon button__icon--dark">
+              <use xlink:href="./img/sprite.svg#arrow"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+
+    </main>
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__contacts">
+          <a href="./index.html" class="footer__logo">
+            <img src="./img/logo-footer.png" alt="Логотип" class="footer__logo-img" />
+          </a>
+
+          <nav class="menu footer__menu">
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <a href="./webinars.html" class="footer__menu-link">Вебинары</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="./books.html" class="footer__menu-link">Книги</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="./cheat-sheets.html" class="footer__menu-link">Шпаргалки</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="./webinar-kits.html" class="footer__menu-link">Комплект вебинаров</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="footer__connect">
+            <div class="footer__text">Связаться со мной:</div>
+            <ul class="footer__socials social">
+              <li class="social__item">
                 <a href="#" class="social__link">
-                  <svg class="social__img">
+                  <svg class="social__img social__img--footer">
                     <use xlink:href="./img/sprite.svg#tg"></use>
                   </svg>
                 </a>
+              </li>
+
+              <li class="social__item">
                 <a href="#" class="social__link">
-                  <svg class="social__img">
+                  <svg class="social__img social__img--footer">
                     <use xlink:href="./img/sprite.svg#vk"></use>
                   </svg>
                 </a>
-              </div>
-              <div class="cart__cover">
-                <a href="./basket.html" class="cart header__cart">
-                  <svg class="cart__img">
-                    <use xlink:href="./img/sprite.svg#cart"></use>
-                  </svg>
-                </a>
-              </div>
-              <svg class="burger__icon">
-                <use xlink:href="./img/sprite.svg#burger"></use>
-              </svg>
-              <nav class="burger__nav" id="headerBurger">
-                <div class="close" id="burgerClose">
-                  <svg class="close__img">
-                    <use xlink:href="./img/sprite.svg#close"></use>
-                  </svg>
-                </div>
-              </nav>
-            </div>
-          </div>
-        </header>
-
-        <nav class="breadcrumbs">
-          <div class="container breadcrumbs__container">
-            <ul class="breadcrumbs__list">
-              <li class="breadcrumbs__item">
-                <a href="./index.html" class="breadcrumbs__link">Главная</a>
-              </li>
-              <li class="breadcrumbs__item">
-                <a href="./faqs.html" class="breadcrumbs__link"
-                  >Часто задаваемые вопросы</a
-                >
               </li>
             </ul>
           </div>
-        </nav>
-
-        <div class="faqs" id="faqs">
-          <div class="faqs__container">
-            <h2 class="faqs__container_title">Часто задаваемые вопросы</h2>
-            <div class="faqs__container_question">
-              <div class="faqs__container_items">
-                <div class="faqs__container_quest">Почему собака метит?</div>
-                <div class="faqs__container_answer">
-                  Хозяин скажет: «Собака написала в квартире».
-                  <p style="margin-bottom: 10px"></p>
-                  А я скажу: «Написала, что враги не пройдут, территория
-                  занята!».
-                  <p style="margin-bottom: 10px"></p>
-                  Причин, по которых питомец метит, может быть несколько, среди
-                  которых, как ни странно, ваша гиперопека. Узнать, как решается
-                  данная проблема можно из инструкции, шпаргалки, вебинара
-                  «Метки» и «Этология».
-                </div>
-              </div>
-              <div class="faqs__container_items">
-                <div class="faqs__container_quest">
-                  Самый запоминающийся случай из практики
-                </div>
-                <div class="faqs__container_answer">
-                  Это первый кейс, который я решила дистанционно:
-                  <p style="margin-bottom: 10px"></p>
-                  2017 год, 3-летний стаф превратил  квартиру в руины. Хозяева
-                  обращались и к попам, и к врачам – безрезультатно. Отчаялись,
-                  были готовы  отказаться от собаки. Но я была уверена в своем
-                  подходе!
-                  <p style="margin-bottom: 10px"></p>
-                  Ровно на 14-й день хозяин написал о том, что первый раз пришли
-                  домой, квартира цела. Я расплакалась от счастья  и взяла за
-                  эталон 14 дней на выстраивание иерархии. И, уверовав в силы и
-                  знания, начала развивать дистанционное направление (магазин).
-                  Сейчас у меня клиенты есть даже в Америке.
-                </div>
-              </div>
-              <div class="faqs__container_items">
-                <div class="faqs__container_quest">
-                  Можно ли собаке в кровать?
-                </div>
-                <div class="faqs__container_answer">
-                  Можно. Но только если вы позвали. 
-                  <p style="margin-bottom: 10px"></p>
-                  А подробнее о том, как любить собаку, но не избаловать ее, в
-                  шпаргалке
-                </div>
-              </div>
-              <div class="faqs__container_items">
-                <div class="faqs__container_quest">
-                  С собакой надо строго или ласково?
-                </div>
-                <div class="faqs__container_answer">
-                  Как хотите, главное - спокойно. Это язык тела. Он им больше
-                  понятен, чем истеричные крики или сюсюканье.
-                  <p style="margin-bottom: 10px"></p>
-                  Лидер так себя не ведет. От лидера веет спокойствием. С ним
-                  хорошо и спокойно. 
-                  <p style="margin-bottom: 10px"></p>
-                  Счастливая собака - спокойная собака. О том, как заслужить
-                  лидерство, целоваться и обниматься с собакой и при этом не
-                  потерять авторитет, написано в “Шпаргалке” .
-                </div>
-              </div>
-              <div class="faqs__container_items">
-                <div class="faqs__container_quest">
-                  Ваш подход эффективен только для щенков?
-                </div>
-                <div class="faqs__container_answer">
-                  Не только. Собаки - ритуальные существа. И этим надо
-                  пользоваться.
-                  <p style="margin-bottom: 10px"></p>
-                  Особенностями построения отношений со взрослыми собаками можно
-                  овладеть на вебинаре “Проблемы взрослых собак”
-                </div>
-              </div>
-              <div class="faqs__container_items">
-                <div class="faqs__container_quest">
-                  Можете ли вы позаниматься с моей собакой?
-                </div>
-                <div class="faqs__container_answer">
-                  Да, провожу очную дрессировку (ссылка на магазин)
-                  индивидуально или в небольших группах. Мытищи, ул. Мира д. 16.
-                </div>
-              </div>
-              <div class="faqs__container_items">
-                <div class="faqs__container_quest">
-                  У нас большая семья. Кто должен прийти с собакой на очную
-                  дрессировку?
-                </div>
-                <div class="faqs__container_answer">
-                  Идеально приезжать всей семьей, детям – старше 6 лет.
-                </div>
-              </div>
-              <div class="faqs__container_items">
-                <div class="faqs__container_quest">
-                  Поможете ли вы с дрессировкой, если я не могу попасть к вам на
-                  очное занятие?
-                </div>
-                <div class="faqs__container_answer">
-                  Могу порекомендовать дистанционные дрессировки (ссылка на
-                  продукт).
-                  <p style="margin-bottom: 10px"></p>
-                  Ознакомьтесь с материалами и присылайте мне видео практических
-                  результатов. Будем смотреть и корректировать.
-                </div>
-              </div>
-              <div class="faqs__container_items">
-                <div class="faqs__container_quest">Собака друг человека?</div>
-                <div class="faqs__container_answer">
-                  Да, нас так учили, но оказывается сама собака об этом не
-                  знает. Чтоб она стала вашим другом, то есть была удобной,
-                  ненавязчивой, послушной – дрессировки и любви мало. Важен
-                  статус! Мы коллективные, они стайные. Наука этология очень
-                  сложная, но я смогла дать вам сложнейшую информацию простым и
-                  понятным языком. Одноимённый вебинар поможет понять, а главное
-                  в нём есть план как себя вести, чтоб стать лидером. Лидер –
-                  это тот, кто всем распоряжается. Сила у того, кто обладает
-                  знаниями, а не силой физической.
-                </div>
-              </div>
-              <div class="faqs__container_items">
-                <div class="faqs__container_quest">
-                  Шпаргалка – это основной инструмент?
-                </div>
-                <div class="faqs__container_answer">
-                  Шпаргалка – это основной инструмент, который дополняет любой
-                  вебинар. Это конспект-инструкция, её просто нужно применить.
-                  Собаку невозможно откорректировать, это стихия. Но можно
-                  откорректировать своё к ней отношение, и она изменится сама.
-                </div>
-              </div>
-              <div class="faqs__container_items">
-                <div class="faqs__container_quest">
-                  Нужно собаку кастрировать/стерилизовать?
-                </div>
-                <div class="faqs__container_answer">
-                  Моя собака гиперактивная. Все говорят, надо её
-                  кастрировать/стерилизовать и она успокоится. Нет! В природе
-                  возбуждается только то, что возбуждают. Вебинар манипуляция, и
-                  после просмотра, у вас спокойная собака!
-                </div>
-              </div>
-              <div class="faqs__container_items">
-                <div class="faqs__container_quest">Как управлять щенком?</div>
-                <div class="faqs__container_answer">
-                  Мы купили щенка и как давай его любить. Мы его любить, а он
-                  нас кусать. Мы его приучать, а он нам ссать. Мы его
-                  воспитывать, а он нам пол квартиры сожрал. Вебинар щенок,
-                  посмотреть внедрить, и в половое созревание влетим и не
-                  заметим! Чтоб потом не говорить, возраст такой. Ведите себя
-                  правильно, и в любом возрасте собака будет одинаково
-                  управляема.
-                </div>
-              </div>
-              <div class="faqs__container_items">
-                <div class="faqs__container_quest">Собака компаньон</div>
-                <div class="faqs__container_answer">
-                  У нас собака компаньон.Она не умеет оставаться одна, так
-                  заводчик сказал. Он очень ориентирован на человека, поэтому мы
-                  его отводим к бабушке, нанимаем догситтера, берем с собой.
-                  Дорогие мои, вебинар проблемы взрослых собак, и ваша собака не
-                  грызёт, не воет, не лает и не ходит как привязанная по дому за
-                  вами.
-                </div>
-              </div>
-              <div class="faqs__container_items">
-                <div class="faqs__container_quest">
-                  Собака метит от вредности, что мы только не делали, как
-                  отучить?
-                </div>
-                <div class="faqs__container_answer">
-                  Собака метит от вредности, что мы только не делали, как
-                  отучить? Это совсем просто, вебинар метки! Приучения к туалету
-                  не существует! А вы с успехом внедряли дурацкие советы –
-                  хвалили, ругали. Вот и получили. Сами развязали мокрую вонючую
-                  войну – сами и прекратим. Вебинар метки ваш помощник и
-                  спаситель!
-                </div>
-              </div>
-              <div class="faqs__container_items">
-                <div class="faqs__container_quest">
-                  Собака привередлива к еде
-                </div>
-                <div class="faqs__container_answer">
-                  Моя собака не пищевик. Моя собака привереда. Моя собачка
-                  капризуля. Все эти качества не имеют отношения к собаке)))
-                  <p style="margin-bottom: 10px"></p>
-                  Вебинар пищевые манипуляции, и ваша собака будет кушать как из
-                  пулемёта)))
-                </div>
-              </div>
-              <div class="faqs__container_items">
-                <div class="faqs__container_quest">
-                  Ревность собаки к ребенку
-                </div>
-                <div class="faqs__container_answer">
-                  Моя собака меня ревнует. Рычит на ребенка, лает, когда малыш
-                  плачет. Придётся её отдать. Вебинар младенец и собака ваш гид.
-                  Ваш проводник в отношения между ребёнком человеческим и
-                  собачьим)
-                </div>
-              </div>
-            </div>
-            <button class="button button__light button__light-faqs">
-              <span class="button__text">Показать еще</span>
-
-              <svg class="button__icon button__icon--dark">
-                <use xlink:href="./img/sprite.svg#arrow"></use>
-              </svg>
-            </button>
-          </div>
+          <ul class="footer__politics">
+            <li class="footer__politic">
+              <a href="#" class="footer__politic-link">Политика конфиденциальности</a>
+            </li>
+            <li class="footer__politic">
+              <a href="#" class="footer__politic-link">Пользовательское соглашение</a>
+            </li>
+          </ul>
         </div>
 
-        <footer class="footer">
-          <div class="container footer__container">
-            <div class="footer__contacts">
-              <a href="./index.html" class="footer__logo">
-                <img
-                  src="./img/logo-footer.png"
-                  alt="Логотип"
-                  class="footer__logo-img"
-                />
-              </a>
+        <div class="footer__copyright">© Зоопсихолог Сысоева</div>
+      </div>
+    </footer>
+  </div>
+  <script src="./scripts/faqQuestion.js"></script>
+  <script src="./scripts/faq.js"></script>
+  <script src="./scripts/burgerMenu.js"></script>
+  <script src="./scripts/menu.js"></script>
+</body>
 
-              <nav class="menu footer__menu">
-                <ul class="footer__menu-list">
-                  <li class="footer__menu-item">
-                    <a href="./webinars.html" class="footer__menu-link"
-                      >Вебинары</a
-                    >
-                  </li>
-                  <li class="footer__menu-item">
-                    <a href="./books.html" class="footer__menu-link">Книги</a>
-                  </li>
-                  <li class="footer__menu-item">
-                    <a href="./cheat-sheets.html" class="footer__menu-link"
-                      >Шпаргалки</a
-                    >
-                  </li>
-                  <li class="footer__menu-item">
-                    <a href="./webinar-kits.html" class="footer__menu-link"
-                      >Комплект вебинаров</a
-                    >
-                  </li>
-                </ul>
-              </nav>
-
-              <div class="footer__connect">
-                <div class="footer__text">Связаться со мной:</div>
-                <ul class="footer__socials social">
-                  <li class="social__item">
-                    <a href="#" class="social__link">
-                      <svg class="social__img social__img--footer">
-                        <use xlink:href="./img/sprite.svg#tg"></use>
-                      </svg>
-                    </a>
-                  </li>
-
-                  <li class="social__item">
-                    <a href="#" class="social__link">
-                      <svg class="social__img social__img--footer">
-                        <use xlink:href="./img/sprite.svg#vk"></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <ul class="footer__politics">
-                <li class="footer__politic">
-                  <a href="#" class="footer__politic-link"
-                    >Политика конфиденциальности</a
-                  >
-                </li>
-                <li class="footer__politic">
-                  <a href="#" class="footer__politic-link"
-                    >Пользовательское соглашение</a
-                  >
-                </li>
-              </ul>
-            </div>
-
-            <div class="footer__copyright">© Зоопсихолог Сысоева</div>
-          </div>
-        </footer>
-      </main>
-    </div>
-    <script src="./scripts/faqQuestion.js"></script>
-    <script src="./scripts/faq.js"></script>
-    <script src="./scripts/burgerMenu.js"></script>
-    <script src="./scripts/menu.js"></script>
-  </body>
 </html>

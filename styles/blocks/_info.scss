@@ -1,0 +1,40 @@
+.info {
+    margin-top: 60px;
+}
+
+.info__container_title {
+    margin-bottom: 60px;
+    color: #282828;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 110%;
+}
+
+@media(max-width: 1080px) {
+    .info__container_title {
+        font-size: 32px;
+    }
+}
+
+@media(max-width: 480px) {
+    .info {
+        margin-top: 30px;
+    }
+
+    .info__container_title {
+        margin-bottom: 30px;
+    }
+
+    .info .faq__question p {
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 360px) {
+    .info__container_title {
+        font-size: 24px;
+    }
+    .info .faq__question p {
+        font-size: 16px;
+    }
+}
